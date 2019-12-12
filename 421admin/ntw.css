@@ -1,0 +1,625 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,600');
+
+body {
+    background: rgba(255, 255, 255, 1);
+    font-family: 'Raleway', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 15px !important;
+    line-height: 1.5 !important;
+    font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-weight: 600;
+    line-height: 1.2 !important;
+}
+
+h2 {
+    color: #005dab !important;
+}
+
+.navbar {
+    border-width: 4px !important;
+    border-color: #005dab !important;
+    border-right: none;
+    border-left: none;
+    margin-bottom: 0
+}
+
+.navbar-inverse {
+    background-color: #fff !important;
+}
+
+.navbar-brand {
+    height: auto !important;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
+    background-color: #005dab !important;
+    color: #fff;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #000;
+}
+
+.navbar-brand > img {
+    display: inline-block;
+    max-width: 240px;
+    height: auto;
+}
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+    background-color: transparent !important;
+    color: #005dab !important;
+}
+
+.navbar-inverse .navbar-toggle {
+    background-color: #005dab;
+}
+
+.navbar-inverse .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+
+.navbar-inverse .navbar-toggle {
+    border: none;
+    border-radius: 0;
+}
+
+.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
+    background-color: #fdba31;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.hero {
+    max-height: 380px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.row.top-border {
+    border-top: #ddd 1px solid;
+    margin-top: 30px;
+    padding-top: 30px;
+    text-align: center;
+}
+
+.top-border h3 {
+    color: #005dab;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+button {
+    background-color: #fdba31;
+    border-radius: 0 !important;
+    color: #fff;
+}
+
+.btn-sm, .btn-group-sm > .btn {
+    font-size: 14px;
+    padding: 6px 10px;
+}
+
+.top-border button {
+    text-transform: uppercase;
+}
+
+.btn-danger {
+    color: #fff;
+    background-color: #005dab !important;
+    border: none !important;
+    border-radius: 0 !important;
+}
+
+.btn-danger:hover, .btn-danger:focus, .btn-danger.focus, .btn-danger:active, .btn-danger.active, .open > .dropdown-toggle.btn-danger {
+    background-color: #fdba31 !important;
+    color: #fff !important;
+}
+
+.navbar .container {
+    padding-bottom: 0;
+}
+
+.container {
+    padding-bottom: 20px;
+}
+
+.row img {
+    max-width: 100%;
+    height: auto;
+}
+
+.row img.icon {
+    max-width: 100px;
+}
+
+footer {
+    background: rgba(226, 226, 226, 1);
+    font-size: 12px;
+    margin-top: 10px;
+    padding: 20px 0;
+    text-align: right;
+}
+
+table {
+    position: relative;
+    z-index: 0;
+
+}
+
+.side_bar a:link, .side_bar a:visited {
+    color: #0056b0;
+    text-decoration: none;
+
+}
+
+.side_bar a:hover, .side_bar a:active {
+    color: #4b8dfe;
+    text-decoration: underline;
+
+}
+
+#dealer_info, #dealer_verify, #add_tire, #remove_tire {
+    display: none;
+
+}
+
+.login {
+    text-align: right;
+    padding: 0px 50px 0px 0px;
+    color: #444444;
+    font-size: 10px;
+}
+
+.login input {
+    vertical-align: middle;
+    color: #444444;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+}
+
+.blue_bar {
+    width: 770px;
+    height: 30px;
+    background: transparent url(images/mrh_blue_bar.gif) no-repeat;
+}
+
+.page_body {
+    width: 1170px;
+    margin: 0px auto;
+    background-color: #ffffff;
+}
+
+.side_bar {
+    float: left;
+    width: 350px;
+
+}
+
+.side_bar ul {
+    list-style-type: none;
+    margin-top: 30px;
+}
+
+.content {
+    min-height: 450px;
+    float: left;
+    width: 700px;
+    border-left: solid 1px #cccccc;
+    padding: 20px 20px 20px 40px;
+
+}
+
+.content_header {
+    font-weight: bold;
+    text-align: center;
+}
+
+.content ul li {
+    font-weight: bold;
+}
+
+.form_wrapper {
+    width: 300px;
+    margin: 0px auto;
+}
+
+.form_header {
+    float: left;
+    width: 100px;
+    margin: 8px 0px 0px 0px;
+}
+
+.form_field {
+    float: left;
+    width: 200px;
+    margin: 8px 0px 0px 0px;
+
+}
+
+.form_submit {
+    float: left;
+    width: 300px;
+    margin: 30px 0px 0px 0px;
+    text-align: center;
+}
+
+.g-recaptcha {
+    margin: 10px 0;
+}
+
+.plan_odd {
+    background-color: #F0F0F0;
+}
+
+.plan_wrapper {
+    width: 600px;
+    margin: 0px auto;
+}
+
+.plan_header {
+    float: left;
+    width: 200px;
+    margin: 8px 0px 0px 0px;
+}
+
+.plan_answer {
+    float: left;
+    width: 190px;
+    padding: 0px 0px 0px 10px;
+    margin: 8px 0px 0px 0px;
+}
+
+.plan_field {
+    float: left;
+    width: 300px;
+    margin: 8px 0px 0px 0px;
+
+}
+
+.plan_line {
+    float: left;
+    width: 500px;
+    margin: 0px 0px 0px 0px;
+    text-align: center;
+}
+
+.plan_submit {
+    float: left;
+    width: 500px;
+    margin: 30px 0px 0px 0px;
+    text-align: center;
+}
+
+.dealer_id {
+    float: left;
+    padding: 4px 0px;
+    width: 70px;
+
+}
+
+.contact_last_name {
+    float: left;
+    padding: 4px 0px;
+    width: 150px;
+}
+
+.business_name {
+    float: left;
+    padding: 4px 0px;
+    width: 150px;
+    overflow: hidden;
+
+}
+
+.plan_number {
+    float: left;
+    padding: 4px 0px;
+    width: 100px;
+}
+
+.plan_date {
+    float: left;
+    padding: 4px 0px;
+
+    width: 100px;
+}
+
+.plan_search {
+    font-size: 10px;
+    text-align: left;
+    margin: 20px 0px;
+
+}
+
+.plan_search select, .plan_search input {
+    font-size: 10px;
+
+}
+
+.cust_last_name, .cust_first_name {
+    float: left;
+    padding: 4px 0px;
+    width: 100px;
+    overflow: hidden;
+}
+
+.claim_id {
+    float: left;
+    padding: 4px 0px;
+    width: 120px;
+    clear: left;
+
+}
+
+.claim_date {
+    float: left;
+    padding: 4px 0px;
+    width: 120px;
+
+}
+
+.claim_total {
+    float: left;
+    padding: 4px 0px;
+    width: 120px;
+    text-align: right;
+    clear: right;
+
+}
+
+.vehicle {
+    float: left;
+    padding: 4px 0px;
+    width: 170px;
+}
+
+#vehicle_make_id, #tire_make_id, #edit_new_dealer, #edit_plan, #edit_claim, #final_check, #max_replace, #replace_info, #edit_claim, #run_update, #update_submit {
+    display: none;
+
+}
+
+.ui-menu-item {
+    width: 196px;
+    background-color: #ffffff;
+}
+
+.ui-autocomplete {
+    cursor: default;
+    width: 200px;
+
+}
+
+.ui-menu {
+    list-style: none outside none;
+    background-color: #ffffff;
+    width: 196px;
+    padding: 2px;
+    margin: 0px;
+
+}
+
+.ui-widget-content {
+    border: 1px solid #0056B0;
+
+}
+
+.coverage_header {
+    font-family: 'Times New Roman', times, serif;
+    font-size: 10pt;
+    font-weight: bold;
+    text-align: center;
+}
+
+.coverage_copy {
+    font-family: 'Times New Roman', times, serif;
+    font-size: 10pt;
+    font-weight: normal;
+    line-height: 10pt;
+}
+
+.coverage_copy td {
+    vertical-align: top;
+}
+
+.coverage_copy p {
+    text-align: justify;
+}
+
+.coverage_sub_header {
+    text-align: center;
+    font-weight: bold;
+    line-height: 15pt;
+}
+
+.underline {
+    text-decoration: underline;
+
+}
+
+.decoration {
+    font-family: 'Times New Roman', times, serif;
+    font-size: 10pt;
+    padding: 2px 0px;
+}
+
+.recatchpa {
+    clear: both;
+    padding-top: 20px;
+}
+
+@media (min-width: 768px) {
+    .navbar-nav {
+        margin: 0 !important;
+    }
+
+    form#dealer_login {
+        margin: 0 0 0 30px;
+        padding: 10px 0;
+        text-align: right;
+    }
+
+    .img-responsive, .thumbnail > img, .thumbnail a > img, .carousel-inner > .item > img, .carousel-inner > .item > a > img {
+        width: 100%;
+    }
+
+    .col-md-4.col-border {
+        border-left: #ddd 1px solid;
+        border-right: #ddd 1px solid;
+    }
+
+    .top-border .col-md-4 {
+        padding: 0 30px;
+    }
+}
+
+@media (max-width: 991px) {
+    .navbar-brand > img {
+        max-width: 180px;
+    }
+}
+
+@media (max-width: 767px) {
+    .navbar-brand {
+        max-width: 80%;
+    }
+
+    .navbar-brand > img {
+        max-width: 140px;
+    }
+}
+
+@media (max-width: 767px) {
+    .sidebar, .content, .plan_submit, .form_header, .form_field, .form_submit {
+        float: none;
+    }
+
+    .page_body, .side_bar, .content, .plan_wrapper, .plan_submit, .plan_header, .plan_field, .form_wrapper, .form_header, .form_field, .form_submit {
+        width: 100%;
+    }
+
+    input[type=submit], .form_submit {
+        margin-top: 20px;
+    }
+
+    .plan_submit {
+        clear: both;
+    }
+
+    .plan_submit p {
+        background-color: #efefef;
+        padding: 10px;
+        text-align: left;
+    }
+
+    .form_wrapper {
+        margin: 0;
+    }
+
+    .content {
+        padding: 20px;
+    }
+
+    .plan_number, .plan_date, .cust_last_name, .cust_first_name, .vehicle {
+        float: left;
+        padding: 4px;
+        margin-right: 1px;
+        width: auto;
+        font-size: 14px !important;
+    }
+
+    .plan_number:nth-of-type(1), .plan_date:nth-of-type(1), .cust_last_name:nth-of-type(1), .cust_first_name:nth-of-type(1), .vehicle:nth-of-type(1) {
+        background-color: none;
+    }
+
+}
+
+@media print {
+
+    @page {
+        size: 8.5in 11in;
+        margin: .75in
+    }
+}
+
+@media print {
+    .nonprintable {
+        display: none;
+    }
+}
+
+@media print {
+    .border {
+        border: 0;
+    }
+}
+
+@media print {
+    .coverage_header {
+        font-size: 8.5pt;
+        line-height: 8.5pt;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .coverage_sub_header {
+        text-align: center;
+        font-weight: bold;
+        line-height: 15pt;
+    }
+
+    .coverage_copy {
+        font-size: 8.5pt;
+        line-height: 8.5pt;
+        text-align: justify;
+    }
+
+    .coverage_copy p {
+        text-align: justify;
+    }
+
+    .coverage_copy td {
+        vertical-align: top;
+    }
+
+    .underline {
+        text-decoration: underline;
+
+    }
+
+    .decoration {
+        font-size: 10pt;
+        padding: 1px 0px;
+    }
+
+}
+
+@media print {
+    .watermark {
+        height: 650px;
+        overflow: hidden;
+    }
+
+}
+
+@media print {
+
+    .coverage_image {
+        position: relative;
+        z-index: 0;
+        top: -600px;
+        left: 0px;
+
+    }
+
+}
+
+.clearBoth {
+    clear: both;
+
+}

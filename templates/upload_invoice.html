@@ -1,0 +1,30 @@
+<div class="page_body">
+    <div class="side_bar">
+        <p style="text-align: center; padding: 10px;"><img src="images/tires.png" alt="damaged tire replacement plan"
+                                                           style="width: 90%;">
+        <p>
+
+    </div>
+    <div class="content">
+        <p class="content_header">Upload Documents</p>
+        <p class="content_header" style="color: #990000; font-weight: bold">{MESSAGE}</p>
+
+        <p class="content_header">{UPLOAD_INSTRUCTION}</p>
+        <form name="document_upload" id="document_upload" action="upload_invoice" enctype="multipart/form-data"
+              method="post">
+            <div class="plan_wrapper">
+                <div class="plan_header">Please select the original invoice:</div>
+                <div class="plan_field"><input type="file" name="invoice_{NEXT_DOC}" size="30" tabindex="1"></div>
+                <div class="plan_submit">
+                    <input id="submit_document" type="submit" value="Upload" name="submit_document">
+                </div>
+
+            </div>
+            <input type="hidden" name="claim_id" id="claim_id" value="{CLAIM_ID}">
+            <input type="hidden" name="next_doc" id="next_doc" value="{NEXT_DOC}">
+
+        </form>
+    </div>
+    <div class="clearBoth"></div>
+</div>
+

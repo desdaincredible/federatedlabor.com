@@ -1,0 +1,132 @@
+<div class="page_body">
+    <div class="side_bar">
+        {ADMIN_MENU}
+    </div>
+    <div class="content">
+        <p class="content_header">Register a New Dealer</p>
+        <p class="content_header">Step 2: Review Dealer Information</p>
+        <form name="dealer_check" id="dealer_check" action="dealer_check" method="post">
+
+            <div class="plan_wrapper">
+                <div id="dealer_review">
+                    <div class="plan_submit"><p><b>Dealer Information</b></p></div>
+                    <div class="plan_header">Contact First Name:</div>
+                    <div class="plan_field">{CONTACT_FIRST_NAME}</div>
+                    <div class="plan_header">Contact Last Name:</div>
+                    <div class="plan_field">{CONTACT_LAST_NAME}</div>
+                    <div class="plan_header">Contact Title:</div>
+                    <div class="plan_field">{CONTACT_TITLE}</div>
+                    <div class="plan_header">Dealer Business Name:</div>
+                    <div class="plan_field">{BUSINESS_NAME}</div>
+                    <div class="plan_header">Dealer Address</div>
+                    <div class="plan_field">{BUSINESS_ADDRESS}</div>
+                    <div class="plan_header">Dealer City</div>
+                    <div class="plan_field">{BUSINESS_CITY}</div>
+                    <div class="plan_header">Dealer State</div>
+                    <div class="plan_field">{BUSINESS_STATE}</div>
+                    <div class="plan_header">Dealer Zip</div>
+                    <div class="plan_field">{BUSINESS_ZIP}</div
+                    <div class="plan_header">Dealer Phone:</div>
+                    <div class="plan_field">{BUSINESS_PHONE}</div>
+                    <div class="plan_header">Dealer Fax:</div>
+                    <div class="plan_field">{BUSINESS_FAX}></div>
+                    <div class="plan_header">Dealer Email:</div>
+                    <div class="plan_field">{BUSINESS_EMAIL}</div>
+                    <div class="plan_header" id="d_id">Dealer Id:</div>
+                    <div class="plan_field">{DEALER_ID}</div>
+                    <div class="plan_header">Dealer Username:</div>
+                    <div class="plan_field">{DEALER_USERNAME}</div>
+                    <div class="plan_header">Dealer Password:</div>
+                    <div class="plan_field">{DEALER_PASSWORD}</div>
+                    <div class="plan_header">Dealer Site</div>
+                    <div class="plan_field">{DEALER_SITE}</div>
+                </div>
+                <div id="edit_new_dealer">
+                    <div class="plan_header" id="con_first">Contact First Name:</div>
+                    <div class="plan_field">
+                        <input type="text" id="contact_first_name" name="contact_first_name" size="30"
+                               value="{CONTACT_FIRST_NAME}"></div>
+                    <div class="plan_header" id="con_last">Contact Last Name:</div>
+                    <div class="plan_field"><input type="text" id="contact_last_name" name="contact_last_name" size="30"
+                                                   value="{CONTACT_LAST_NAME}"></div>
+                    <div class="plan_header" id="con_title">Contact Title:</div>
+                    <div class="plan_field">
+                        <input type="text" id="contact_title" name="contact_title" size="30" value="{CONTACT_TITLE}">
+                    </div>
+
+                    <div class="plan_header" id="bus_name">Dealer Business Name:</div>
+                    <div class="plan_field">
+                        <input type="text" id="business_name" name="business_name" size="30" value="{BUSINESS_NAME}">
+                    </div>
+                    <div class="plan_header" id="bus_address">Dealer Address</div>
+                    <div class="plan_field">
+                        <input type="text" id="business_address" name="business_address" size="30"
+                               value="{BUSINESS_ADDRESS}"></div>
+
+                    <div class="plan_header" id="bus_city">Dealer City</div>
+                    <div class="plan_field">
+                        <input type="text" id="business_city" name="business_city" size="30" value="{BUSINESS_CITY}">
+                    </div>
+
+                    <div class="plan_header" id="bus_state">Dealer State</div>
+                    <div class="plan_field">
+                        <input type="text" id="business_state" name="business_state" size="30" value="{BUSINESS_STATE}">
+                    </div>
+                    <div class="plan_header" id="bus_zip">Dealer Zip</div>
+                    <div class="plan_field">
+                        <input type="text" id="business_zip" name="business_zip" size="30" value="{BUSINESS_ZIP}"></div
+                    <div class="plan_header" id="bus_phone">Dealer Phone:</div>
+                    <div class="plan_field">
+                        <input type="text" id="business_phone" name="business_phone" size="30" value="{BUSINESS_PHONE}">
+                    </div>
+                    <div class="plan_header" id="bus_fax">Dealer Fax:</div>
+                    <div class="plan_field"><input type="text" id="business_fax" name="business_fax" size="30"
+                                                   value="{BUSINESS_FAX}"></div>
+                    <div class="plan_header" id="bus_email">Dealer Email:</div>
+                    <div class="plan_field">
+                        <input type="text" id="business_email" name="business_email" size="30" value="{BUSINESS_EMAIL}">
+                    </div>
+
+                    <div class="plan_header" id="d_id">Dealer Id:</div>
+                    <div class="plan_field"><input type="text" id="dealer_id" name='dealer_id' size='30'
+                                                   value="{DEALER_ID}"></div>
+                    <div class="plan_header" id="d_username">Dealer Username:</div>
+                    <div class="plan_field"><input type="text" id="dealer_username" name='dealer_username' size='30'
+                                                   value="{DEALER_USERNAME}"></div>
+                    <div class="plan_header" id="d_password">Dealer Password:</div>
+                    <div class="plan_field"><input type="text" id="dealer_password" name='dealer_password' size='30'
+                                                   value="{DEALER_PASSWORD}"></div>
+                    <div class="plan_header" id="d_site">Dealer Site</div>
+                    <div class="plan_field"><select size="1" id="dealer_site" name="dealer_site" value="{DEALER_SITE}">
+                        <option value="" selected>Select the Site being used</option>
+                        <option value="mrh" {MRH}>myroadhazard.com</option>
+                        <option value="car" {CAR}>carroadhazard.com</option>
+                        <option value="wfr" {WFR}>carroadhazard.com Worry-Free</option>
+                        <option value="rho" {RHO}>roadhazardonline.com</option>
+                        <option value="cwt" {CWT}>cwtroadhazard.com</option>
+                        <option value="tmx" {TMX}>treadmaxxroadhazard.com</option>
+                        <option value="apr" {APR}>autoprideroadhazard.com</option>
+                        <option value="ppr" {PPR}>partsplusroadhazard.com</option>
+                        <option value="pnr" {PNR}>pnroadhazard.com</option>
+                        <option value="arh" {ARH}>autoroadhazard.com</option>
+                        <option value="mtp" {MTP}>mytireplan.com</option>
+                        <option value="frh" {FRH}>federatedroadhazard.com</option>
+                        <option value="tmt" {TMT}>treadmaxxtireprotection.com</option>
+
+                    </select></div>
+                </div>
+                <input type="hidden" name="next_page" id="next_page" value="1">
+                <div class="plan_submit"><input id="dealer_edit" type="submit" value="Edit Dealer"
+                                                name="edit_dealer"><input id="dealer_complete" type="submit"
+                                                                          value="Enter New Dealer"
+                                                                          name="dealer_complete"><input id="final_check"
+                                                                                                        type="submit"
+                                                                                                        value="Review"
+                                                                                                        name="final_check">
+                </div>
+            </div>
+
+        </form>
+    </div>
+    <div class="clearBoth"></div>
+</div>

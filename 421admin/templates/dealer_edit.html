@@ -1,0 +1,60 @@
+<div class="page_body">
+    <div class="side_bar">
+        {ADMIN_MENU}
+    </div>
+    <div class="content">
+        <p class="content_header">Edit Dealer</p>
+        <form name="dealer_update" id="dealer_update" action="dealer_update" method="post">
+
+            <div class="plan_wrapper">
+                <div class="plan_header" id="con_first">Contact First Name:</div>
+                <div class="plan_field">
+                    <input type="text" id="contact_first_name" name="contact_first_name" size="30"
+                           value="{CONTACT_FIRST_NAME}"></div>
+                <div class="plan_header" id="con_last">Contact Last Name:</div>
+                <div class="plan_field"><input type="text" id="contact_last_name" name="contact_last_name" size="30"
+                                               value="{CONTACT_LAST_NAME}"></div>
+                <div class="plan_header" id="con_title">Contact Title:</div>
+                <div class="plan_field">
+                    <input type="text" id="contact_title" name="contact_title" size="30" value="{CONTACT_TITLE}"></div>
+
+                <div class="plan_header" id="bus_name">Dealer Business Name:</div>
+                <div class="plan_field">
+                    <input type="text" id="business_name" name="business_name" size="30" value="{BUSINESS_NAME}"></div>
+                <div class="plan_header" id="bus_address">Dealer Address</div>
+                <div class="plan_field">
+                    <input type="text" id="business_address" name="business_address" size="30"
+                           value="{BUSINESS_ADDRESS}"></div>
+
+                <div class="plan_header" id="bus_city">Dealer City</div>
+                <div class="plan_field">
+                    <input type="text" id="business_city" name="business_city" size="30" value="{BUSINESS_CITY}"></div>
+
+                <div class="plan_header" id="bus_state">Dealer State</div>
+                <div class="plan_field">
+                    <input type="text" id="business_state" name="business_state" size="30" value="{BUSINESS_STATE}">
+                </div>
+                <div class="plan_header" id="bus_zip">Dealer Zip</div>
+                <div class="plan_field">
+                    <input type="text" id="business_zip" name="business_zip" size="30" value="{BUSINESS_ZIP}"></div>
+                <div class="plan_header" id="bus_phone">Dealer Phone:</div>
+                <div class="plan_field">
+                    <input type="text" id="business_phone" name="business_phone" size="30" value="{BUSINESS_PHONE}">
+                </div>
+                <div class="plan_header" id="bus_fax">Dealer Fax:</div>
+                <div class="plan_field"><input type="text" id="business_fax" name="business_fax" size="30"
+                                               value="{BUSINESS_FAX}"></div>
+                <div class="plan_header" id="bus_email">Dealer Email:</div>
+                <div class="plan_field">
+                    <input type="text" id="business_email" name="business_email" size="30" value="{BUSINESS_EMAIL}">
+                </div>
+
+                <input type="hidden" name="orig_dealer_id" id="orig_dealer_id" value="{DEALER_ID}">
+                <div class="plan_submit"><input id="dealer_complete" type="submit" value="Update Dealer"
+                                                name="dealer_complete"></div>
+            </div>
+
+        </form>
+    </div>
+    <div class="clearBoth"></div>
+</div>

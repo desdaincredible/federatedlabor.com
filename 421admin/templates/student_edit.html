@@ -1,0 +1,55 @@
+<div class="page_body">
+    <div class="side_bar">
+        {ADMIN_MENU}
+    </div>
+    <div class="content">
+        <p class="content_header">{MESSAGE}&nbsp;</p>
+        <p>Note: Leave password field blank unless you want to change it</p>
+        <form name="user_check" id="user_check" action="student_update" method="post">
+            <input type="hidden" name="student_id" id="student_id" value="{STUDENT_ID}">
+            <div class="plan_wrapper">
+                <div class="plan_submit"><p><b>Student Information</b></p></div>
+                <div class="plan_header" id="con_first">First Name:</div>
+                <div class="plan_field"><input type="text" id="user_first_name" name='user_first_name' size='30'
+                                               value="{USER_FIRST_NAME}"></div>
+                <div class="plan_header" id="con_first">Last Name:</div>
+                <div class="plan_field"><input type="text" id="user_last_name" name='user_last_name' size='30'
+                                               value="{USER_LAST_NAME}"></div>
+                <div class="plan_header">Address 1:</div>
+                <div class="plan_field"><input type="text" id="user_address_1" name='user_address_1' size='30'
+                                               value="{USER_ADDRESS_1}"></div>
+                <div class="plan_header">Address 2:</div>
+                <div class="plan_field"><input type="text" id="user_address_2" name='user_address_2' size='30'
+                                               value="{USER_ADDRESS_2}"></div>
+                <div class="plan_header">City:</div>
+                <div class="plan_field"><input type="text" id="user_city" name='user_city' size='30'
+                                               value="{USER_CITY}"></div>
+                <div class="plan_header">State:</div>
+                <div class="plan_field"><input type="text" id="user_state" name='user_state' size='30'
+                                               value="{USER_STATE}"></div>
+                <div class="plan_header">Zip:</div>
+                <div class="plan_field"><input type="text" id="user_zip" name='user_zip' size='30' value="{USER_ZIP}">
+                </div>
+                <div class="plan_header">Phone:</div>
+                <div class="plan_field"><input type="text" id="user_phone" name='user_phone' size='30'
+                                               value="{USER_PHONE}"></div>
+                <div class="plan_header">Email:</div>
+                <div class="plan_field"><input type="text" id="user_email" name='user_email' size='30'
+                                               value="{USER_EMAIL}"></div>
+                <div class="plan_header" id="d_password">Password:</div>
+                <div class="plan_field"><input type="text" id="user_password" name='user_password' size='30' value="">
+                </div>
+                <div class="plan_header" id="d_password">Enroll in class: <br><br><b>Important!</b><br>Deselecting a
+                    current course will NOT remove it unless 1) The course was added in the last 24 hours and 2) The
+                    user has not yet accessed the course.
+                </div>
+
+                <div class="plan_field"><select size="10" name="user_classes[]" multiple>
+                    {CLASS_LIST}
+                </select>
+                    <div class="plan_submit"><input type="submit" value="Submit" name="update_student"></div>
+                </div>
+        </form>
+    </div>
+    <div class="clearBoth"></div>
+</div>

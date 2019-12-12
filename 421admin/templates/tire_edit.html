@@ -1,0 +1,53 @@
+<div class="page_body">
+    <div class="side_bar">
+        {ADMIN_MENU}
+    </div>
+    <div class="content">
+        <p class="content_header">{MESSAGE}</p>
+        <p class="content_header">Tire Makes and Models</p>
+        <form name="new_make" id="new_make" action="tire_edit" method="post">
+            <div class="plan_wrapper">
+                <div class="plan_submit"><b>Add a new tire make</b></div>
+                <div class="plan_header">Make Name:</div>
+                <div class="plan_field">
+                    <input type="text" id="make_name" name="make_name" size="30"></div>
+                <div class="plan_submit"><input type="submit" value="Submit" name="add_make"></div>
+            </div>
+        </form>
+        <form name="new_model" id="new_model" action="tire_edit" method="post">
+            <div class="plan_wrapper">
+                <div class="plan_submit"><p><b>Add a new tire model</b></p></div>
+                <div class="plan_header">Make Name:</div>
+                <div class="plan_field"><select size="1" name="make_id">{MAKES}</select></div>
+                <div class="plan_header">Model Name:</div>
+                <div class="plan_field">
+                    <input type="text" id="model_name" name="model_name" size="30"></div>
+                <div class="plan_submit"><input type="submit" value="Submit" name="add_model"></div>
+            </div>
+        </form>
+        <form name="search_car" action="search_tire" method="post">
+            <div class="plan_wrapper">
+                <div class="plan_submit"><p><b>Find a Make/Model</b></p></div>
+                <div class="plan_header">Search Term:</div>
+                <div class="plan_field"><input type="text" name="term" size="20" size="30"></div>
+                <div class="plan_header">Type of Match:</div>
+                <div class="plan_field"><select size="1" name="operator">
+                    <option value="starts">Begins With</option>
+                    <option value="contains">Contains</option>
+                </select></div>
+                <div class="plan_header">Search By:</div>
+                <div class="plan_field"><select size="1" name="criteria">
+                    <option value="make_name" selected>Make Name</option>
+                    <option value="model_name">Model Name</option>
+                </select></div>
+                <div class="plan_header">View Unlinked</div>
+                <div class="plan_field"><input type="checkbox" name="unlinked" value="1"> Check this box to view a list
+                    of all models not linked to a make
+                </div>
+                <div class="plan_submit"><input type="submit" value="Submit" name="show_tires"></div>
+                <div class="clearBoth"></div>
+            </div>
+        </form>
+    </div>
+    <div class="clearBoth"></div>
+</div>

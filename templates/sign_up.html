@@ -1,0 +1,49 @@
+<div class="container" role="main">
+    <div class="row">
+        <div class="col-md-8">
+            <h2>{SITE_NAME}</h2>
+            <p class="content_header" style="color: #990000">{MESSAGE}</p>
+
+
+            <p>Interested in knowing more? Please use the form below to contact us, and a representative will contact
+                you and show you how easy it is to start earning extra revenue on every tire sale:
+            <form id="abs_signup" name="abs_signup" action="sign_up" method="post">
+                <div class="contact_wrapper">
+                    <div class="contact_header" id="c_name">Your Name:</div>
+                    <div class="contact_field"><input type="text" id="contact_name" name="contact_name" size="30"
+                                                      value="{CONTACT_NAME}"></div>
+                    <div class="contact_header" id="b_name">Business Name:</div>
+                    <div class="contact_field"><input type="text" id="business_name" name="business_name" size="30"
+                                                      value="{BUSINESS_NAME}"></div>
+                    <div class="contact_header" id="tel">Telephone:</div>
+                    <div class="contact_field"><input type="text" id="telephone" name="telephone" size="15"
+                                                      value="{TELEPHONE}"></div>
+                    <div class="contact_header" id="adr">Address:</div>
+                    <div class="contact_field"><input type="text" id="address" name="address" size="30"
+                                                      value="{ADDRESS}"></div>
+                    <div class="contact_header" id="c_cit">City:</div>
+                    <div class="contact_field"><input type="text" id="city" name="city" size="30" value="{CITY}"></div>
+                    <div class="contact_header" id="sta">State:</div>
+                    <div class="contact_field"><input type="text" id="state" name="state" size="2" value="{STATE}">
+                    </div>
+                    <div class="contact_header" id="z_code">Zip:</div>
+                    <div class="contact_field"><input type="text" id="zip" name="zip" size="12" value="{ZIP}"></div>
+                    <div class="contact_header" id='ema'>Email:</div>
+                    <div class="contact_field"><input type='text' id='email' name='email' size='30' value="{EMAIL}">
+                    </div>
+                    <div class="contact_header" id='c_message'>Comment/Request:</div>
+                    <div class="contact_field"><textarea id='contact_message' name='contact_message' rows='5' cols='80'>{CONTACT_MESSAGE}</textarea>
+                    </div>
+                    <div class="g-recaptcha" data-sitekey="6Lca3VMUAAAAAFwgrSs1eVdHhc-lWh4LvUsd3rwn"></div>
+
+                    <div class="contact_submit"><input type="submit" value="Submit" name="send_message"></div>
+                    <div class="clearBoth"></div>
+                </div>
+            </form>
+        </div>
+        <div class="col-md-4" style="padding-top: 10px;">
+            <p><img src="images/iStock_000034792106Small.jpg" alt="damaged tire replacement plan"/></p>
+        </div>
+    </div>
+    <div id="run_update">{INCOMPLETE}</div>
+</div>

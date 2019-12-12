@@ -1,0 +1,87 @@
+<form name="dealer_check" id="dealer_check" action="dealer_check" onsubmit="return false" method="post">
+
+    <div class="plan_wrapper">
+        <div id="dealer_verify">
+            <div class="plan_header">Contact First Name:</div>
+            <div class="plan_field">{CONTACT_FIRST_NAME}</div>
+            <div class="plan_header">Contact Last Name:</div>
+            <div class="plan_field">{CONTACT_LAST_NAME}</div>
+            <div class="plan_header">Contact Title:</div>
+            <div class="plan_field">{CONTACT_TITLE}</div>
+            <div class="plan_header">Business Name:</div>
+            <div class="plan_field">{BUSINESS_NAME}</div>
+            <div class="plan_header">Business Address</div>
+            <div class="plan_field">{BUSINESS_ADDRESS}</div>
+            <div class="plan_header">Business City</div>
+            <div class="plan_field">{BUSINESS_CITY}</div>
+            <div class="plan_header">Business State</div>
+            <div class="plan_field">{BUSINESS_STATE}</div>
+            <div class="plan_header">Business Zip</div>
+            <div class="plan_field">{BUSINESS_ZIP}</div>
+            <div class="plan_header">Business Phone:</div>
+            <div class="plan_field">{BUSINESS_PHONE}</div>
+            <div class="plan_header">Business Fax:</div>
+            <div class="plan_field">{BUSINESS_FAX}</div>
+            <div class="clearBoth"></div>
+            <div class="plan_header">Business Email:</div>
+            <div class="plan_field">{BUSINESS_EMAIL}</div>
+            <div class="clearBoth"></div>
+        </div>
+        <div id="dealer_update">
+            <div class="plan_header" id="con_first">Contact First Name:</div>
+            <div class="plan_field">
+                <input type="text" id="contact_first_name" name="contact_first_name" size="30"
+                       value="{CONTACT_FIRST_NAME}">
+            </div>
+            <div class="plan_header" id="con_last">Contact Last Name:</div>
+            <div class="plan_field">
+                <input type="text" id="contact_last_name" name="contact_last_name" size="30"
+                       value="{CONTACT_LAST_NAME}">
+            </div>
+            <div class="plan_header" id="con_title">Contact Title:</div>
+            <div class="plan_field">
+                <input type="text" id="contact_title" name="contact_title" size="30" value="{CONTACT_TITLE}">
+            </div>
+            <div class="plan_header" id="bus_name">Business Name:</div>
+            <div class="plan_field">
+                <input type="text" id="business_name" name="business_name" size="30" value="{BUSINESS_NAME}">
+            </div>
+            <div class="plan_header" id="bus_address">Business Address</div>
+            <div class="plan_field">
+                <input type="text" id="business_address" name="business_address" size="30" value="{BUSINESS_ADDRESS}">
+            </div>
+            <div class="plan_header" id="bus_city">Business City</div>
+            <div class="plan_field">
+                <input type="text" id="business_city" name="business_city" size="30" value="{BUSINESS_CITY}">
+            </div>
+            <div class="plan_header" id="bus_state">Business State</div>
+            <div class="plan_field">
+                <input type="text" id="business_state" name="business_state" size="30" value="{BUSINESS_STATE}">
+            </div>
+            <div class="plan_header" id="bus_zip">Business Zip</div>
+            <div class="plan_field">
+                <input type="text" id="business_zip" name="business_zip" size="30" value="{BUSINESS_ZIP}">
+            </div>
+            <div class="plan_header" id="bus_phone">Business Phone:</div>
+            <div class="plan_field">
+                <input type="text" id="business_phone" name="business_phone" size="30" value="{BUSINESS_PHONE}"></div>
+            <div class="plan_header" id="bus_fax">Business Fax:</div>
+            <div class="plan_field"><input type="text" id="business_fax" name="business_fax" size="30"
+                                           value="{BUSINESS_FAX}"></div>
+            <div class="plan_header" id="bus_email">Business Email:</div>
+            <div class="plan_field">
+                <input type="text" id="business_email" name="business_email" size="30" value="{BUSINESS_EMAIL}"></div>
+
+
+        </div>
+
+        <div class="plan_submit"><input id="dealer_complete" type="submit" value="This is correct"
+                                        name="dealer_complete"><input id="dealer_edit" type="submit" value="Update info"
+                                                                      name="edit_dealer"><input id="update_submit"
+                                                                                                type="submit"
+                                                                                                value="Submit Update"
+                                                                                                name="update_submit">
+        </div>
+    </div>
+    <input type="hidden" name="dealer_id" id="dealer_id" value="{DEALER_ID}">
+</form>

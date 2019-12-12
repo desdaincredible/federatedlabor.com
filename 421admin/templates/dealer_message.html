@@ -1,0 +1,31 @@
+<div class="page_body">
+    <div class="side_bar">
+        {ADMIN_MENU}
+    </div>
+    <div class="content">
+        <p class="content_header">Dealer Message</p>
+        <p>Basic HTML</p>
+        <p>to create a paragraph, wrap text in a p tag:<br><br>
+            &lt;p&gt;This is a paragraph&lt;/p&gt;</p>
+        <p>This is a paragraph</p>
+        <p>To make a line break, use &lt;br&gt;:<br><br>
+            First line&lt;br&gt;Second line<br><br>
+            First line<br>Second line</p>
+        <p>For <b>bold</b>, surround the word or phrase with the b tag<br>
+            &lt;b>bold&lt;/b>
+        </p>
+        <p>For <i>italics</i>, surround the word or phrase with the i tag<br>
+            &lt;i>italics&lt;/i>
+        </p>
+        <form method="POST" action="dealer_message">
+            <div class="plan_wrapper">
+
+                <textarea rows="10" name="dealer_message" cols="50">{DEALER_MESSAGE}</textarea>
+            </div>
+            <div class="plan_submit"><input type="submit" value="Submit" name="show_dealers"></div>
+            <div class="clearBoth"></div>
+    </div>
+    </form>
+</div>
+<div class="clearBoth"></div>
+</div>

@@ -1,0 +1,37 @@
+<div class="page_body">
+    <div class="side_bar">
+        <ul>
+            <li><a href="new_plan">Register a Plan Sale</a></li>
+            <li><a href="new_claim">File a Claim</a></li>
+            <li><a href="view_plans">Reprint a Coverage Statement</a></li>
+            <li><a href="promo_download">Download Promotional Materials</a></li>
+            <li><a href="login?logout=1">Log Out</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <p class="content_header">Reprint a Coverage Statement</p>
+        <p>To clear a search, simply hit submit on the form without entering a search term.</p>
+
+        {MESSAGE}
+        <div class="plan_wrapper">
+            <div class="plan_search">
+                <form name="view_plans" action="view_plans" method="post">Search: <select size="1" name="criteria">
+                    <option value="plan_date">Date</option>
+                    <option value="customer_phone">Phone</option>
+                    <option value="customer_last_name" selected>Last Name</option>
+                </select> <select size="1" name="operator">
+                    <option value="starts" selected>Begins With</option>
+                    <option value="contains">Contains</option>
+                </select> <input type="text" name="term" size="15"> <input type="hidden" name="search_plans"
+                                                                           value="1"><input type="submit" value="Submit"
+                                                                                            name="search_plans">
+            </div>
+
+            {PLAN_HEADER}
+            <div class="clearBoth"></div>
+            {PLAN_INFO}
+
+        </div>
+    </div>
+    <div class="clearBoth"></div>
+</div>

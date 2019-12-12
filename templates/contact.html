@@ -1,0 +1,80 @@
+<script type="text/javascript">
+    var RecaptchaOptions = {
+        theme: 'custom',
+        custom_theme_widget: 'recaptcha_widget'
+    };
+</script>
+<div class="page_body">
+    <div class="side_bar">
+        <p style="text-align: center; padding: 10px;"><img border="0" src="images/mrh_side_image.jpg"
+                                                           alt="Welcome to myroadhazard.com">
+    </div>
+    <div class="content">
+        <p class="content_header">Automotive Business Solutions<br>Nationwide Road Hazard Plan</p>
+        <p>&nbsp;</p>
+        <p class="content_header" style="color: #990000">{MESSAGE}</p>
+        <p style="text-align: center">To contact us, please use the form below - or call us at <b>866-830-4189</b></p>
+        <form name="abs_contact" id="abs_contact" action="contact" method="post">
+            <div class="form_wrapper">
+                <div class="form_header" id="c_name">Your Name:</div>
+                <div class="form_field"><input type="text" id="contact_name" name="contact_name" size="30"></div>
+                <div class="form_header" id="b_name">Business Name:</div>
+                <div class="form_field"><input type="text" id="business_name" name="business_name" size="30"></div>
+                <div class="form_header" id="tel">Telephone:</div>
+                <div class="form_field"><input type="text" id="telephone" name="telephone" size="15"></div>
+                <div class="form_header" id='ema'>Email:</div>
+                <div class="form_field"><input type='text' id='email' name='email' size='30'></div>
+                <div class="form_header" id='c_message'>Request:</div>
+                <div class="form_field"><textarea id='contact_message' name='contact_message' rows='5'
+                                                  cols='28'></textarea></div>
+                <div class="recatchpa">
+                    <div id="recaptcha_widget" style="display:none">
+                        <div id="recaptcha_image"></div>
+                        <div style="padding: 10px 0px;">
+                            <div class="recaptcha_only_if_incorrect_sol" style="color:red">Incorrect please try again
+                            </div>
+                            <span class="recaptcha_only_if_image">Enter the words above:</span>
+                            <span class="recaptcha_only_if_audio">Enter the numbers you hear:</span>
+                        </div>
+                        <div style="padding: 10px 0px;"><input type="text" id="recaptcha_response_field"
+                                                               name="recaptcha_response_field"/></div>
+                        <div style="float: left; width: 150px;padding: 10px 0px;"><a
+                                href="javascript:Recaptcha.reload()">
+                            <small>Get another CAPTCHA</small>
+                        </a></div>
+                        <div class="recaptcha_only_if_image" style="float: left; width:  150px;padding: 10px 0px;"><a
+                                href="javascript:Recaptcha.switch_type('audio')">
+                            <small>Get an audio CAPTCHA</small>
+                        </a></div>
+                        <div class="recaptcha_only_if_audio" style="float: left; width:  150px;padding: 10px 0px;"><a
+                                href="javascript:Recaptcha.switch_type('image')">
+                            <small>Get an image CAPTCHA</small>
+                        </a></div>
+                        <div style="float: left; width:  100px;padding: 10px 0px;"><a
+                                href="javascript:Recaptcha.showhelp()">
+                            <small>Help</small>
+                        </a></div>
+                        <div style="padding: 10px 0px;">&copy <a href="http://www.google.com/recaptcha">ReCatchpa</a>
+                        </div>
+                    </div>
+                    <script type="text/javascript"
+                            src="http://www.google.com/recaptcha/api/challenge?k=6Lcn3cESAAAAAIPDKWtGvUzKUyu94GWxHLNpUekU"></script>
+                    <noscript>
+                        <iframe src="http://www.google.com/recaptcha/api/noscript?k=6Lcn3cESAAAAAIPDKWtGvUzKUyu94GWxHLNpUekU"
+                                height="300" width="500" frameborder="0"></iframe>
+                        <br>
+                        <textarea name="recaptcha_challenge_field" rows="3" cols="40">    </textarea>
+                        <input type="hidden" name="recaptcha_response_field"
+                               value="manual_challenge">
+                    </noscript>
+
+
+                </div>
+                <div class="form_submit"><input type="submit" value="Submit" name="send_message"></div>
+
+                <div class="clearBoth"></div>
+            </div>
+        </form>
+    </div>
+    <div class="clearBoth"></div>
+</div>

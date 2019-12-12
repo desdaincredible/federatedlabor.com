@@ -1,0 +1,80 @@
+<div class="page_body">
+    <div class="side_bar">
+        {ADMIN_MENU}
+    </div>
+    <div class="content">
+        <p class="content_header">Add Test Questions</p>
+        <form name="new_test_questions" id="new_test_questions" action="course_exam_add" method="post">
+            <div class="plan_wrapper">
+                <div class="plan_line"><p><b>Class Information</b></p></div>
+                <div class="plan_line"><p style="text-align: left;">Note: All fields <i>except</i> the answers fields
+                    are required. If you are creating a final exam, set the section to 0.</p></div>
+                <div class="plan_header">Exam Title</div>
+                <div class="plan_field"><input type="text" id="exam_title" name="exam_title" size="30" tabindex="1"
+                                               class="formcheck"></div>
+                <div class="plan_header">Class:</div>
+                <div class="plan_field"><select size="1" name="class_id">{CLASS_NAMES}</select></div>
+                <div class="plan_header">Section:</div>
+                <div class="plan_field">
+                    <select size="1" name="section_id">
+                        <option>0</option>
+                        <option selected>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                    </select>
+                </div>
+                <div class="plan_header">Quiz Type:</div>
+                <div class="plan_field"><select size="1" name="quiz_type">
+                    <option>Quiz</option>
+                    <option>Final</option>
+                </select></div>
+                <div class="plan_line"><p><b>Question and Answer Information</b></p></div>
+                <div class="plan_line"><p>Use the checkbox to indicate a correct answer</p></div>
+                <div id="question_1" style="padding-bottom: 20px;">
+                    <div class="plan_header">Question 1</div>
+                    <div class="plan_field"><input type="text" id="question_1" name="question_1" size="30" tabindex="1"
+                                                   class="formcheck"></div>
+                    <div class="plan_answer" id="">Answer 1</div>
+                    <div class="plan_field"><input type="text" id="answer_1_a" name="answer_1_a" size="30" tabindex="2"
+                                                   class="formcheck"><input type="checkbox" id="answer_1_a_correct"
+                                                                            name="answer_1_a_correct" value="correct">
+                    </div>
+                    <div class="plan_answer" id="t_model_1">Answer 2</div>
+                    <div class="plan_field"><input type="text" name="answer_1_b" id="answer_1_b" size="30" tabindex="3"
+                                                   class="formcheck"><input type="checkbox" id="answer_1_b_correct"
+                                                                            name="answer_1_b_correct" value="correct">
+                    </div>
+                    <div class="plan_answer">Answer 3</div>
+                    <div class="plan_field"><input type="text" id="answer_1_c" name="answer_1_c" size="30" tabindex="4"
+                                                   class="formcheck"><input type="checkbox" id="answer_1_c_correct"
+                                                                            name="answer_1_c_correct" value="correct">
+                    </div>
+                    <div class="plan_answer" id="t_dot_1">Answer 4</div>
+                    <div class="plan_field"><input type="text" id="answer_1_d" name="answer_1_d" size="30" tabindex="5"
+                                                   class="formcheck"><input type="checkbox" id="answer_1_d_correct"
+                                                                            name="answer_1_d_correct" value="correct">
+                    </div>
+                    <div class="plan_answer" id="t_price_1">Answer 5</div>
+                    <div class="plan_field"><input type="text" tabindex="5" id="answer_1_e" name='answer_1_e' size='30'
+                                                   tabindex="6" class="formcheck"><input type="checkbox"
+                                                                                         id="answer_1_e_correct"
+                                                                                         name="answer_1_e_correct"
+                                                                                         value="correct"></div>
+                    <div class="clearBoth"></div>
+                    <hr style="color: gray; background-color: gray; height: 1px; width: 90%; margin: 15px 0px;"></hr>
+                </div>
+                <div class="plan_submit" id="add_remove"><p><br><span id='newQuestion'><a href="#" name="add_1"
+                                                                                          id="add_question">Click to enter another
+              question</a></span><span id="divider" style="display: none;"> | </span><span id='minusQuestion'
+                                                                                           style="display: none;"><a
+                        href="#" id="remove_question" name="remove_1">Click to remove this
+              question</a></span><br></p></div>
+
+
+                <div class="plan_submit"><input type="submit" value="Submit" name="add_exam"></div>
+            </div>
+        </form>
+    </div>
+    <div class="clearBoth"></div>
+</div>

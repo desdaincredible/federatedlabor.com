@@ -1,0 +1,73 @@
+<div class="page_body">
+    <div class="side_bar">
+        <p style="text-align: center; padding: 10px;">
+	        <img src="images/iStock_000034792106Small.jpg" alt="damaged tire replacement plan" style="width:340px; height: 226px;">
+        <p>
+    </div>
+    <div class="content">
+        <div id="claim">
+            <h1>File a New Claim</h1>
+            <h2>Step 1: Enter Claim Info</h2>
+            <p>Attention: If you need to make a claim on more than two tires, please call 866-830-4189</p>
+            <form id="new_claim" name="new_claim" action="new_claim_2" method="post">
+
+                <div class="plan_wrapper">
+                    <div class="plan_header">Original Invoice Number:</div>
+                    <div class="plan_field"><input type="text" name="invoice_number" size="30" tabindex="1"></div>
+                    <div class="plan_header">Original Purchase Date</div>
+                    <div class="plan_field"><input type="text" id="invoice_date" name="invoice_date" size="30"
+                                                   tabindex="2" autocomplete="off"></div>
+                    <div class="plan_header">Replacement Purchase Date</div>
+                    <div class="plan_field">
+	                    <input type="text" id="sub_invoice_date" name="sub_invoice_date" size="30" tabindex="2" autocomplete="off">
+                        <!-- Alert div shown only if tire is not eligible -->                         
+	                     <div class="alert alert-danger diff_alert hide">
+	                     <strong>Purchase is not eligible.</strong> The NTW RHP expires three (3) years from original retail sale.
+	                     </div>
+	                    <!-- END new alert div -->
+                    </div>
+                    <div class="plan_header">Original Mileage Reading</div>
+                    <div class="plan_field"><input type="text" id="orig_mileage" name="orig_mileage" size="30"
+                                                   tabindex="3"></div>
+                    <div class="plan_header">Current Mileage Reading</div>
+                    <div class="plan_field"><input type="text" id="current_mileage" name="current_mileage" size="30"
+                                                   tabindex="3"></div>
+                    <div class="plan_header">Person Filing Claim</div>
+                    <div class="plan_field"><input type="text" id="claim_filer" name="claim_filer" size="30"
+                                                   tabindex="4"></div>
+					<div style="clear:both;"></div>
+                    <h4 class="sub-section">Vehicle Information</h4>
+                    <div class="plan_header" id="car_year">Vehicle Year:</div>
+                    <div class="plan_field">
+                        <input class="formcheck" type="text" id="vehicle_year" name="vehicle_year" size="4"
+                               tabindex="5">
+                        <small>Please use 4-digit year</small>
+                    </div>
+                    <div class="plan_header" id="car_make">Vehicle Make:</div>
+                    <div class="plan_field">
+                        <select size="1" id="vehicle_make" name="vehicle_make" size="30"
+                                tabindex="6">{VEHICLE_MAKES}</select>
+                    </div>
+                    <div class="clearBoth"></div>
+                    <div class="plan_header" id="car_model">Vehicle Model:<br/>
+                        <div class="formhelp">Start typing and either choose from list or enter your own.</div>
+                    </div>
+                    <div class="plan_field">
+                        <input class="formcheck" type='text' id="vehicle_model" name='vehicle_model' size='30'
+                               tabindex="7">
+                    </div>
+                    <div class="plan_submit"><input id="submit_button" type="submit" value="Submit" name="send_message"></div>
+                    <div id="vehicle_make_id"></div>
+
+                    <div class="clearBoth"></div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="clearBoth"></div>
+</div>
+{SHOW_MODAL}
+<div id="dealer_info" title="Shop Information">
+    {DEALER_INFO}
+
+</div>

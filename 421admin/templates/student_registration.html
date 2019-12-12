@@ -1,0 +1,26 @@
+<div class="page_body">
+    <div class="side_bar">
+        {ADMIN_MENU}
+    </div>
+    <div class="content">
+        <p class="content_header">{MESSAGE}&nbsp;</p>
+        <form name="user_check" id="user_check" action="student_registration" method="post">
+            <div class="plan_wrapper">
+                <div class="plan_submit"><p><b>Student Information</b></p></div>
+                <div class="plan_header" id="con_first">Student Email:</div>
+                <div class="plan_field"><input type="text" id="user_email" name='user_email' size='30'></div>
+                <div class="plan_header" id="d_password">Student Password:</div>
+                <div class="plan_field"><input type="text" id="user_password" name='user_password' size='30'
+                                               value="{PASSWORD}"></div>
+                <div class="plan_header" id="d_password">Enroll in class: <br><br>Note: Online course have a<br>"W" in
+                    the course number. To select more than one class,<br>hold down the control button.
+                </div>
+                <div class="plan_field"><select size="10" name="user_classes[]" multiple>
+                    {CLASS_LIST}
+                </select>
+                    <div class="plan_submit"><input type="submit" value="Submit" name="add_student"></div>
+                </div>
+        </form>
+    </div>
+    <div class="clearBoth"></div>
+</div>

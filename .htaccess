@@ -1,0 +1,20 @@
+#php_flag display_errors on
+#php_value error_reporting 6143
+
+RewriteEngine On
+
+#RewriteCond %{REQUEST_URI} !^/~ntwclaim/(.*?)/
+#RewriteCond %{REQUEST_URI} !^/~ntwclaim/index.php 
+#RewriteCond %{REQUEST_URI} !^/~ntwclaim/(.*).css 
+#RewriteRule (.*)$ /~ntwclaim/index.php?id=$1&%{QUERY_STRING} [L]
+
+RewriteCond %{REQUEST_URI} !^/(.*?)/
+RewriteCond %{REQUEST_URI} !^/index.php 
+RewriteCond %{REQUEST_URI} !^(.*).css 
+RewriteRule (.*)$ /index.php?id=$1&%{QUERY_STRING} [L]
+
+
+#RewriteCond %{REQUEST_URI} !^/mrh/(.*?)/
+#RewriteCond %{REQUEST_URI} !^/mrh/index.php 
+#RewriteCond %{REQUEST_URI} !^(.*).css 
+#RewriteRule (.*)$ /mrh/index.php?id=$1&%{QUERY_STRING}

@@ -1,0 +1,37 @@
+Originating Dealer: {DEALER_NAME}
+Dealer Phone: {DEALER_PHONE}
+
+Claim Information
+
+Original Invoice Number: {INVOICE_NUMBER}
+Original Purchase Date: {INVOICE_DATE}
+Original Mileage Reading: {ORIG_MILEAGE}
+Current Mileage Reading: {CURRENT_MILEAGE}
+Person Filing Claim: {CLAIM_FILER}
+
+Vehicle Information
+
+Vehicle Year: {VEHICLE_YEAR}
+Vehicle Make: {VEHICLE_MAKE_NAME}
+Vehicle Model: {VEHICLE_MODEL}
+
+Uploaded documents
+
+Original Invoice: {ORIGINAL_INVOICE}
+Current Invoice: {NEW_INVOICE}
+
+Tire Information
+
+Tire 1
+
+Tire Make: {TIRE_MAKE_1}
+Tire Model: {TIRE_MODEL_1}
+Tire Size: {TIRE_SIZE_1}
+Tire DOT #: {TIRE_DOT_1}
+Original Part Number: {ORIGINAL_PART_NUMBER_1}
+Replacement Part Number: {CLAIM_PART_NUMBER_1}
+Original Tire Price: {ORIGINAL_TIRE_PRICE_1}
+Replacement Tire Price: {CLAIM_TIRE_PRICE_1}
+Original Tread Depth: {ORIGINAL_TREAD_DEPTH_1}/32
+Remaining Tread Depth: {REMAINING_TREAD_DEPTH_1}/32
+Tire Damage Description: {TIRE_DAMAGE_DESC_1}				

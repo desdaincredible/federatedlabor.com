@@ -1,0 +1,37 @@
+<div class="page_body">
+    <div class="side_bar">
+        {ADMIN_MENU}
+    </div>
+    <div class="content">
+        <p class="content_header">Download Student Data</p>
+        <p>Please note: Because the database did not previously record registration and pass dates, prior to 10/24/2013
+            all signups are assigned to 10/1/2013 and all completed classes are assigned a date of 10/20/2013</p>
+
+        <p class="content_header">Download Students</p>
+
+        <form name="get_student_data" method="POST" action="download_students">
+            <p>Get students starting with student id <input type="text" id="start_id" name='start_id' size='30'
+                                                            value="1"> <input id="get_students" type="submit"
+                                                                              value="Get students" name="get_students">
+            </p>
+        </form>
+
+        <p class="content_header">Download Student Data</p>
+        <form name="get_student_data" method="POST" action="download_student_data">
+            <p>Show students who:</p>
+            <p><select name="date_type">
+                <option value="signup_date">were added</option>
+                <option value="access_date">first accessed their course</option>
+                <option value="pass_date" selected>passed their course</option>
+            </select></p>
+            <p>between <select name="start_month">{CURRENT_START_MONTH}</select><select name="start_day">{CURRENT_START_DAY}</select><select
+                    name="start_year">{CURRENT_START_YEAR}</select> and <select
+                    name="end_month">{CURRENT_END_MONTH}</select><select
+                    name="end_day">{CURRENT_END_DAY}</select><select name="end_year">{CURRENT_END_YEAR}</select></p>
+            <p><input type="checkbox" name="show_all" value="1"> Show all student information (name, email, etc) </p>
+            <p><br><input id="show_student_data" type="submit" value="Download Data" name="show_student_data"></p>
+        </form>
+
+    </div>
+    <div class="clearBoth"></div>
+</div>

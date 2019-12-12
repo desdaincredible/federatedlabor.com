@@ -1,0 +1,184 @@
+<div class="page_body">
+    <div class="side_bar">
+        <ul>
+            <li><a href="new_plan">Register a Plan Sale</a></li>
+            <li><a href="new_claim">File a Claim</a></li>
+            <li><a href="view_plans">Reprint a Coverage Statement</a></li>
+            <li><a href="promo_download">Download Promotional Materials</a></li>
+            <li><a href="login?logout=1">Log Out</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <p class="content_header">Register a New Plan</p>
+        <form name="new_plan_2" id="new_plan_2" action="plan_check" method="post">
+            <div class="plan_wrapper">
+                <div class="plan_line"><p><b>Tire Information</b></p></div>
+                <div class="plan_header" id="tire_num">Number of Tires</div>
+                <div class="plan_field">
+                    <select size="1" tabindex="1" id="num_tires" name="num_tires" class="formcheck">
+                        <option value="0">Please Select</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                    </select>
+                </div>
+                <div class="plan_line"><p><b>Tire Information</b></p></div>
+                <div class="tire_divs" id="tire_1" style="display: none">
+                    <div class="plan_line"><p><b>Tire 1</b></p></div>
+                    <div class="plan_header" id="t_make_1">Tire Make</div>
+                    <div class="plan_field">
+                        <input name="tire_make_1" id="tire_make_1" size="30" type="text" tabindex="12" value="">
+                    </div>
+                    <div class="plan_header" id="t_model_1">Tire Model</div>
+                    <div class="plan_field">
+                        <input name="tire_model_1" id="tire_model_1" size="30" type="text" tabindex="13" value=""></div>
+                    <div class="plan_header" id="t_size_1">Tire Size:</div>
+                    <div class="plan_field">
+                        <input id="tire_size_1" name="tire_size_1" size="30" type="text" tabindex="14" value=""></div>
+                    <div class="plan_header">Tire <a title="What's this?" target="_new" href="tire_information.pdf">DOT
+                        #</a>:
+                    </div>
+
+                    <div class="plan_field" id="t_dot_1">
+                        <input id="tire_dot_1" name="tire_dot_1" size="30" type="text" tabindex="15" value=""></div>
+                    <div class="plan_header" id="t_price_1">Tire Price</div>
+                    <div class="plan_field">
+                        <input id="tire_price_1" name="tire_price_1" size="30" type="text" tabindex="16" value=""></div>
+                </div>
+                <div class="tire_divs" id="tire_2" style="display: none">
+                    <div class="plan_line"><p><b>Tire 2</b></p></div>
+                    <div class="plan_header" id="t_make_2">Tire Make</div>
+
+                    <div class="plan_field">
+                        <input name="tire_make_2" id="tire_make_2" size="30" type="text" tabindex="17" value=""></div>
+                    <div class="plan_header" id="t_model_2">Tire Model</div>
+                    <div class="plan_field">
+                        <input name="tire_model_2" id="tire_model_2" size="30" type="text" value=""></div>
+                    <div class="plan_header" id="t_size_2">Tire Size:</div>
+                    <div class="plan_field">
+                        <input id="tire_size_2" name="tire_size_2" size="30" type="text" value=""></div>
+
+                    <div class="plan_header">Tire <a title="What's this?" target="_new" href="tire_information.pdf">DOT
+                        #</a>:
+                    </div>
+                    <div class="plan_field" id="t_dot_2">
+                        <input id="tire_dot_2" name="tire_dot_2" size="30" type="text" value=""></div>
+                    <div class="plan_header" id="t_price_2">Tire Price</div>
+                    <div class="plan_field">
+                        <input id="tire_price_2" name="tire_price_2" size="30" type="text" tabindex="19" value=""></div>
+                </div>
+                <div class="tire_divs" id="tire_3" style="display: none">
+
+                    <div class="plan_line"><p><b>Tire 3</b></p></div>
+                    <div class="plan_header" id="t_make_3">Tire Make</div>
+                    <div class="plan_field">
+                        <input name="tire_make_3" id="tire_make_3" size="30" type="text" value=""></div>
+                    <div class="plan_header" id="t_model_3">Tire Model</div>
+                    <div class="plan_field">
+                        <input name="tire_model_3" id="tire_model_3" size="30" type="text" tabindex="20" value=""></div>
+
+                    <div class="plan_header" id="t_size_3">Tire Size:</div>
+                    <div class="plan_field">
+                        <input id="tire_size_3" name="tire_size_3" size="30" type="text" tabindex="21" value=""></div>
+                    <div class="plan_header">Tire <a title="What's this?" target="_new" href="tire_information.pdf">DOT
+                        #</a>:
+                    </div>
+                    <div class="plan_field" id="t_dot_3">
+                        <input id="tire_dot_3" name="tire_dot_3" size="30" type="text" tabindex="22" value=""></div>
+                    <div class="plan_header" id="t_price_3">Tire Price</div>
+
+                    <div class="plan_field">
+                        <input id="tire_price_3" name="tire_price_3" size="30" type="text" tabindex="23" value=""></div>
+                </div>
+                <div class="tire_divs" id="tire_4" style="display: none">
+                    <div class="plan_line"><p><b>Tire 4</b></p></div>
+                    <div class="plan_header" id="t_make_4">Tire Make</div>
+                    <div class="plan_field">
+                        <input name="tire_make_4" id="tire_make_4" size="30" type="text" tabindex="24" value=""></div>
+                    <div class="plan_header" id="t_model_4">Tire Model</div>
+
+                    <div class="plan_field">
+                        <input name="tire_model_4" id="tire_model_4" size="30" type="text" tabindex="25" value=""></div>
+                    <div class="plan_header" id="t_size_4">Tire Size:</div>
+                    <div class="plan_field">
+                        <input id="tire_size_4" name="tire_size_4" size="30" type="text" tabindex="26" value=""></div>
+                    <div class="plan_header">Tire <a title="What's this?" target="_new" href="tire_information.pdf">DOT
+                        #</a>:
+                    </div>
+                    <div class="plan_field" id="t_dot_4">
+
+                        <input id="tire_dot_4" name="tire_dot_4" size="30" type="text" tabindex="27" value=""></div>
+                    <div class="plan_header" id="t_price_4">Tire Price</div>
+                    <div class="plan_field">
+                        <input id="tire_price_4" name="tire_price_4" size="30" type="text" tabindex="28" value=""></div>
+                </div>
+                <div class="tire_divs" id="tire_5" style="display: none">
+                    <div class="plan_line"><p><b>Tire 5</b></p></div>
+                    <div class="plan_header" id="t_make_5">Tire Make</div>
+
+                    <div class="plan_field">
+                        <input name="tire_make_5" id="tire_make_5" size="30" type="text" tabindex="29" value=""></div>
+                    <div class="plan_header" id="t_model_5">Tire Model</div>
+                    <div class="plan_field">
+                        <input name="tire_model_5" id="tire_model_5" size="30" type="text" tabindex="30" value=""></div>
+                    <div class="plan_header" id="t_size_5">Tire Size:</div>
+                    <div class="plan_field">
+                        <input id="tire_size_5" name="tire_size_5" size="30" type="text" tabindex="31" value=""></div>
+
+                    <div class="plan_header">Tire <a title="What's this?" target="_new" href="tire_information.pdf">DOT
+                        :</a></div>
+                    <div class="plan_field" id="t_dot_5">
+                        <input id="tire_dot_5" name="tire_dot_5" size="30" type="text" tabindex="32" value=""></div>
+                    <div class="plan_header" id="t_price_5">Tire Price</div>
+                    <div class="plan_field">
+                        <input id="tire_price_5" name="tire_price_5" size="30" type="text" tabindex="33" value=""></div>
+                </div>
+
+                <div class="tire_divs" id="tire_6" style="display: none">
+
+                    <div class="plan_line"><p><b>Tire 6</b></p></div>
+                    <div class="plan_header" id="t_make_6">Tire Make</div>
+                    <div class="plan_field">
+                        <input name="tire_make_6" id="tire_make_6" size="30" type="text" tabindex="34" value=""></div>
+                    <div class="plan_header" id="t_model_6">Tire Model</div>
+                    <div class="plan_field">
+                        <input name="tire_model_6" id="tire_model_6" size="30" type="text" tabindex="35" value=""></div>
+
+                    <div class="plan_header" id="t_size_6">Tire Size:</div>
+                    <div class="plan_field">
+                        <input id="tire_size_6" name="tire_size_6" size="30" type="text" tabindex="36" value=""></div>
+                    <div class="plan_header">Tire <a title="What's this?" target="_new" href="tire_information.pdf">DOT
+                        #</a>:
+                    </div>
+                    <div class="plan_field" id="t_dot_6">
+                        <input id="tire_dot_6" name="tire_dot_6" size="30" type="text" tabindex="37" value=""></div>
+                    <div class="plan_header" id="t_price_6">Tire Price</div>
+
+                    <div class="plan_field">
+                        <input id="tire_price_6" name="tire_price_6" size="30" type="text" tabindex="38" value=""></div>
+                </div>
+
+                <div class="plan_submit"><input type="submit" value="Submit" name="send_message" id="send_message"
+                                                style="display: none"></div>
+                <div id="tire_make_id"></div>
+
+                <input type='hidden' id="customer_first_name" name="customer_first_name" value="{CUSTOMER_FIRST_NAME}">
+                <input type='hidden' id="customer_last_name" name="customer_last_name" value="{CUSTOMER_LAST_NAME}">
+                <input type='hidden' id="customer_email" name="customer_email" value="{CUSTOMER_EMAIL}">
+                <input type='hidden' id="customer_area" name="customer_area" value="{CUSTOMER_AREA}">
+                <input type='hidden' id="customer_exchange" name="customer_exchange" value="{CUSTOMER_EXCHANGE}">
+                <input type='hidden' id="customer_digits" name="customer_digits" value="{CUSTOMER_DIGITS}">
+                <input type='hidden' id="invoice_number" name="invoice_number" value="{INVOICE_NUMBER}">
+                <input type='hidden' id="vehicle_year" name="vehicle_year" value="{VEHICLE_YEAR}">
+                <input type='hidden' id="vehicle_make" name='vehicle_make' value="{VEHICLE_MAKE}">
+                <input type='hidden' id="vehicle_model" name='vehicle_model' value="{VEHICLE_MODEL}">
+                <input type='hidden' id="vehicle_mileage" name='vehicle_mileage' value="{VEHICLE_MILEAGE}">
+
+            </div>
+        </form>
+    </div>
+    <div class="clearBoth"></div>
+</div>

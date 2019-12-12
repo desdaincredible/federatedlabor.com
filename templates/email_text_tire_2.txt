@@ -1,0 +1,14 @@
+
+Tire 2
+
+Tire Make : {TIRE_MAKE_2}
+Tire Model : {TIRE_MODEL_2}
+Tire Size: : {TIRE_SIZE_2}
+Tire DOT #: {TIRE_DOT_2}
+Original Part Number: {ORIGINAL_PART_NUMBER_2}
+Replacement Part Number: {CLAIM_PART_NUMBER_2}
+Original Tire Price: {ORIGINAL_TIRE_PRICE_2}
+Replacement Tire Price: {CLAIM_TIRE_PRICE_2}
+Original Tread Depth: {ORIGINAL_TREAD_DEPTH_2}/32
+Remaining Tread Depth: {REMAINING_TREAD_DEPTH_2}/32
+Tire Damage Description: {TIRE_DAMAGE_DESC_2}

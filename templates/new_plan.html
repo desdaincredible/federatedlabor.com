@@ -1,0 +1,71 @@
+<div class="page_body">
+    <div class="side_bar">
+        <ul>
+            <li><a href="new_plan">Register a Plan Sale</a></li>
+            <li><a href="new_claim">File a Claim</a></li>
+            <li><a href="view_plans">Reprint a Coverage Statement</a></li>
+            <li><a href="promo_download">Download Promotional Materials</a></li>
+            <li><a href="login?logout=1">Log Out</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <p class="content_header">Register a New Plan</p>
+        <p class="content_header">This Road Hazard Plan is to be sold at the time you sell new tires only. You <span
+                style="text-decoration: underline">cannot</span> register a plan on used tires, or tires that you
+            previously sold.</p>
+
+        <form name="new_plan" id="new_plan" action="new_plan_2" method="post">
+            <div class="plan_wrapper">
+                <div class="plan_header">Is this vehicle used for Commercial or Agricultural purposes?</div>
+                <div class="plan_field"><input type='radio' id="comm_ag_use_yes" name='comm_ag_use' value='1'> Yes
+                    <input id="comm_ag_use_no" type='radio' name='comm_ag_use' value='0' checked> No
+                </div>
+                <div class="plan_submit"><p><b>Customer Information</b></p></div>
+                <div class="plan_header" id="cust_first">Customer First Name:</div>
+                <div class="plan_field"><input class="formcheck" type="text" id="customer_first_name"
+                                               name="customer_first_name" size="30" tabindex="1"></div>
+                <div class="plan_header" id="cust_last">Customer Last Name:</div>
+                <div class="plan_field"><input class="formcheck" type="text" id="customer_last_name"
+                                               name="customer_last_name" size="30" tabindex="2"></div>
+                <div class="plan_header" id="cust_first">Customer Email:</div>
+                <div class="plan_field"><input type="text" id="customer_email" name="customer_email" size="30"
+                                               tabindex="3"></div>
+
+                <div class="plan_header" id="cust_phone">Customer Phone:</div>
+                <div class="plan_field">
+                    ( <input class="formcheck" type="text" id="customer_area" name="customer_area" size="3" tabindex="4"
+                             maxlength="3"> ) <input class="formcheck" type="text" id="customer_exchange"
+                                                     name="customer_exchange" size="3" tabindex="5" maxlength="3"> -
+                    <input class="formcheck" type="text" id="customer_digits" name="customer_digits" size="4"
+                           tabindex="6" maxlength="4"></div>
+                <div class="plan_header" id="invoice_num">Invoice Number:</div>
+                <div class="plan_field">
+                    <input class="formcheck" type="text" name="invoice_number" size="30" tabindex="7"></div>
+                <div class="plan_submit"><p><b>Vehicle Information</b></p></div>
+                <div class="plan_header" id="car_year">Vehicle Year:</div>
+                <div class="plan_field">
+                    <input class="formcheck" type="text" id="vehicle_year" name="vehicle_year" size="4" tabindex="8">
+                    <small>Please use 4-digit year</small>
+                </div>
+                <div class="plan_header" id="car_make">Vehicle Make:</div>
+                <div class="plan_field">
+                    <select size="1" id="vehicle_make" name="vehicle_make" size="30"
+                            tabindex="9">{VEHICLE_MAKES}</select>
+                </div>
+                <div class="clearBoth"></div>
+                <div class="plan_header" id="car_model">Vehicle Model:</div>
+                <div class="plan_field">
+                    <input class="formcheck" type='text' id="vehicle_model" name='vehicle_model' size='30'
+                           tabindex="10">
+                </div>
+                <div class="plan_header" id="car_miles">Vehicle Mileage:</div>
+                <div class="plan_field">
+                    <input class="formcheck" type='text' id="vehicle_mileage" name='vehicle_mileage' size='30'
+                           tabindex="11" rel="last"></div>
+                <div class="plan_submit"><input type="submit" value="Submit" name="send_message"></div>
+                <div id="vehicle_make_id"></div>
+            </div>
+        </form>
+    </div>
+    <div class="clearBoth"></div>
+</div>

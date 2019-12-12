@@ -1,0 +1,173 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <title>{TITLE}</title>
+    {META}
+    {CSS}
+    {SCRIPT}
+    <script language="VBScript">
+sub window_onunload
+        on error resume next
+        set WB = nothing
+end sub
+
+function printIt
+	call WB.ExecWB(6,1)
+    if err.number <> 0 then
+         if DA then
+                     alert "Nothing Printed :" & err.number & " : " & err.description
+         else
+             handle_error
+         end if
+    end if
+end function
+
+document.write  "<OBJECT ID=""WB"" WIDTH=0 HEIGHT=0 CLASSID=""CLSID:8856F961-340A-11D0-A96B-00C04FD705A2""> </OBJECT>"
+
+VBS = true
+
+
+    </script>
+</head>
+<body style="background: #ffffff none" leftmargin="0" topmargin="0">
+<table cellspacing="1" cellpadding="0" width="638" align="center">
+    <tr>
+        <th class="decoration" colspan="8">* * * * * * * * * * * * * * * * * * * * *
+            * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+            * *
+        </th>
+    </tr>
+    <tr>
+        <th class="coverage_header" colspan="8">{DEMO}ROAD HAZARD PLAN CLAIM FORM</th>
+    </tr>
+    <tr>
+        <th class="decoration" colspan="8">* * * * * * * * * * * * * * * * * * * * *
+            * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+            * *
+        </th>
+    </tr>
+    <tr>
+        <td class="coverage_copy" valign="top"><b>Claim Date:</b></td>
+        <td class="coverage_copy">{CLAIM_DATE}</td>
+        <td class="coverage_copy"><b>Customer: </b></td>
+        <td class="coverage_copy">{CUSTOMER_FIRST_NAME} {CUSTOMER_LAST_NAME}</td>
+        <td class="coverage_copy"><b>Vehicle Make:</b></td>
+        <td class="coverage_copy">{VEHICLE_MAKE}</td>
+        <td class="coverage_copy"><b>Vehicle Year:</b></td>
+        <td class="coverage_copy">{VEHICLE_YEAR}</td>
+    </tr>
+    <tr>
+        <td class="coverage_copy"><b>Plan Id:</b></td>
+        <td class="coverage_copy">{PLAN_ID}</td>
+        <td class="coverage_copy"><b>Telephone:</b></td>
+        <td class="coverage_copy">{CUSTOMER_PHONE}</td>
+
+        <td class="coverage_copy"><b>Vehicle Model:</b></td>
+        <td class="coverage_copy">{VEHICLE_MODEL}</td>
+        <td class="coverage_copy"><b>Vehicle Mileage</b></td>
+        <td class="coverage_copy">{CLAIM_VEHICLE_MILEAGE}</td>
+    </tr>
+    <tr>
+        <th class="decoration" colspan="8">* * * * * * * * * * * * * * * * * * * * *
+            * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+            * *
+        </th>
+    </tr>
+    <tr>
+        <td colspan="8" class="coverage_copy"><b>Submitting Dealer:</b> {BUSINESS_NAME}, {BUSINESS_ADDRESS}
+            {BUSINESS_CITY}, {BUSINESS_STATE} {BUSINESS_ZIP} {BUSINESS_PHONE}
+        </td>
+    </tr>
+    <tr>
+        <th class="decoration" colspan="8">* * * * * * * * * * * * * * * * * * * * *
+            * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+            * *
+        </th>
+    </tr>
+    <tr>
+        <td colspan="8" class="coverage_header" align="center">Claim Information<br><br>
+            <table border="0" width="100%" cellspacing="0" cellpadding="2">
+                <tr>
+                    <td valign="top" align="left" width="50%" class="coverage_copy"><b>Claim Type:</b> {SERVICE_TYPE}
+                    </td>
+                    <td valign="top" width="25%" class="coverage_copy"><b>Repair Cost:</b> ${CLAIM_TOTAL}</td>
+                    <td valign="top" width="25%" class="coverage_copy"><b>Amount Covered:</b> ${COVERED_AMOUNT}</td>
+                </tr>
+                <tr>
+                    <td valign="top" align="left" width="50%" class="coverage_copy"><b>Damage Description:</b><br>{DAMAGE_DESC}
+                    </td>
+                    <td valign="top" width="25%" class="coverage_copy"><b>Original T/D:</b> {ORIGINAL_TREAD_DEPTH}/32s
+                    </td>
+                    <td valign="top" width="25%" class="coverage_copy"><b>Remaining T/D:</b> {REMAINING_TREAD_DEPTH}/32s
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3" valign="top" align="left" class="coverage_copy"><b>Covered Tire Info:</b> {MAKE}
+                        {MODEL} <b>Size:</b> {SIZE} <b>DOT: </b>{DOT}
+                        {REPLACE_TIRE}
+                    </td>
+                </tr>
+            </table>
+
+        </td>
+    </tr>
+    <tr>
+        <th class="decoration" colspan="8">* * * * * * * * * * * * * * * * * * * * *
+            * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+            * *
+        </th>
+    </tr>
+    <tr>
+        <td colspan="8" class="coverage_copy">
+            <p><b>CLAIM NUMBER: {CLAIM_ID}</b></p>
+            <p><b>CLAIM TOTAL: ${COVERED_AMOUNT}</b></p>
+        </td>
+    </tr>
+    <tr>
+        <th colspan="8" class="decoration">* * * * * * * * * * * * * * * * * * * * *
+            * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+            * *
+        </th>
+    </tr>
+    <tr>
+        <td class="coverage_header" colspan="8"><p>PLEASE FAX THIS CLAIM FORM, ALONG WITH THE ORIGINAL PURCHASE INVOICE
+            FOR THE COVERED TIRE(S), THE INVOICE FOR TODAY'S SERVICE, AND A COPY OF THE CUSTOMER'S LIMITED NATIONWIDE
+            ROAD HAZARD PLAN COVERAGE STATEMENT TO 866-658-1246.</p>
+            <p>PLEASE RESERVE THE REPLACED TIRE(S), IF ANY, <u>FOR 72 HOURS</u> FOR POTENTIAL INSPECTION BY THE PROGRAM
+                ADMINISTRATOR OR IT'S AUTHORIZED INSPECTOR.</p>
+        </td>
+    </tr>
+
+
+    <tr>
+        <td class="coverage_copy" colspan="8" align="center"><p>This claim is subject to review by the Program
+            Administrator for compliance with the Terms and Conditions
+            of the Nationwide Limited Road Hazard Plan. The issuance
+            of a claim number does not constitute approval of this claim.</p>
+            <p class="coverage_header" style="text-align: center">
+
+                Program Administrator<br>
+                866-830-4189</p>
+        </td>
+    </tr>
+
+    <tr>
+        <th colspan="8" class="decoration">* * * * * * * * * * * * * * * * * * * * *
+            * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+            * *
+        </th>
+    </tr>
+</table>
+<br>
+<div class="nonprintable">
+    <table width="213" align="center">
+        <tr>
+            <td width="139" valign="top"><input id="printClaim" "name="print" type="button" class="coverage_copy"
+                value="Print">
+            </td>
+            <td width="58" valign="top">
+                <FORM><INPUT TYPE="button" id="printFinish" class="coverage_copy" value="Finish"></FORM>
+            </td>
+        </tr>
+    </table>
+</div>

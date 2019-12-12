@@ -1,0 +1,30 @@
+<div class="page_body">
+    <div class="side_bar">
+        {ADMIN_MENU}
+    </div>
+    <div class="content">
+        <p class="content_header">Edit Plan</p>
+        <p class="content_header">Step 1: Select Plan</p>
+        <form name="show_plans" action="show_plans" method="post">
+            <div class="plan_wrapper">
+                <div class="plan_header">Search Term:</div>
+                <div class="plan_field"><input type="text" name="term" size="20" size="30"></div>
+                <div class="plan_header">Type of Match:</div>
+                <div class="plan_field"><select size="1" name="operator">
+                    <option value="starts">Begins With</option>
+                    <option value="contains" selected>Contains</option>
+                </select></div>
+                <div class="plan_header">Search By:</div>
+                <div class="plan_field"><select size="1" name="criteria">
+                    <option value="plan_number" selected>Plan Number</option>
+                    <option value="dealer_id">Dealer Id</option>
+                    <option value="customer_phone">Customer Phone</option>
+                    <option value="customer_last_name">Customer Last Name</option>
+                </select></div>
+                <div class="plan_submit"><input type="submit" value="Submit" name="show_plans"></div>
+                <div class="clearBoth"></div>
+            </div>
+        </form>
+    </div>
+    <div class="clearBoth"></div>
+</div>

@@ -1,0 +1,21 @@
+<div class="page_body">
+    <div class="side_bar">
+        {ADMIN_MENU}
+    </div>
+    <div class="content">
+        <p class="content_header">Download Plans</p>
+        <p>Select the dates you want for downloading.<br><br>Important note--the greater the amount of time, the more
+            records and the more likely the application will hang or fail. For best results, please avoid downloading
+            more than a month's worth of reports at a time.</p>
+        <form name="change_date" method="POST" action="download_plans"><p style="text-align: center;"><select
+                name="start_month">{START_MONTH}</select><select name="start_day">{START_DAY}</select><select
+                name="start_year">{START_YEAR}</select>&nbsp;&nbsp;TO&nbsp;&nbsp;<select
+                name="end_month">{END_MONTH}</select><select name="end_day">{END_DAY}</select><select name="end_year">{END_YEAR}</select>&nbsp;&nbsp;&nbsp;&nbsp;<input
+                id="show_plans" type="submit" value="Download Plans" name="show_plans"></p></form>
+        <div class="plan_wrapper">
+            <p>{PLAN_RESULT}</p>
+        </div>
+
+    </div>
+    <div class="clearBoth"></div>
+</div>

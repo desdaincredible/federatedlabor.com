@@ -1,0 +1,314 @@
+<div class="page_body">
+    <div class="side_bar">
+        <p style="text-align: center; padding: 10px;"><img src="images/iStock_000034792106Small.jpg"
+                                                           alt="damaged tire replacement plan"
+                                                           style="width:340px; height: 226px;">
+        <p>
+    </div>
+    <div class="content">
+        <p class="content_header">File a New Claim</p>
+        <p class="content_header">Step 3: Check your claim information</p>
+        <p>Please review the claim information you have entered below. If you need to change any of the information,
+            click "Make Changes to Claim". If everything is right, click "This is correct" and you will be asked to
+            upload your documents</p>
+        <form name="claim_check" id="claim_check" action="claim_check" method="post">
+            <div class="plan_wrapper">
+                <div id="claim_review">
+                    <div class="plan_submit"><p><b>Claim Information</b></p></div>
+                    <div class="plan_header">Original Invoice Number:</div>
+                    <div class="plan_field">{INVOICE_NUMBER}</div>
+                    <div class="plan_header">Original Purchase Date:</div>
+                    <div class="plan_field">{INVOICE_DATE}</div>
+                    <div class="plan_header">Original Mileage Reading:</div>
+                    <div class="plan_field">{ORIG_MILEAGE}</div>
+                    <div class="plan_header">Current Mileage Reading</div>
+                    <div class="plan_field">{CURRENT_MILEAGE}</div>
+                    <div class="plan_header">Person Filing Claim:</div>
+                    <div class="plan_field">{CLAIM_FILER}</div>
+                    <div class="plan_submit"><p><b>Vehicle Information</b></p></div>
+                    <div class="plan_header">Vehicle Year:</div>
+                    <div class="plan_field">{VEHICLE_YEAR}</div>
+                    <div class="plan_header">Vehicle Make:</div>
+                    <div class="plan_field">{VEHICLE_MAKE_NAME}</div>
+                    <div class="plan_header">Vehicle Model:</div>
+                    <div class="plan_field">{VEHICLE_MODEL}</div>
+
+
+                    <div class="plan_line"><p><b><br>Tire Information</b></p></div>
+                    <div style="display: {TIRE_1}">
+                        <div class="plan_line"><p><b>Tire 1</b></p></div>
+                        <div class="plan_header">Tire Make</div>
+                        <div class="plan_field">{TIRE_MAKE_1}</div>
+                        <div class="plan_header">Tire Model</div>
+                        <div class="plan_field">{TIRE_MODEL_1}</div>
+                        <div class="plan_header">Tire Size:</div>
+                        <div class="plan_field">{TIRE_SIZE_1}</div>
+                        <div class="plan_header">Tire DOT #</div>
+                        <div class="plan_field">{TIRE_DOT_1}</div>
+                        <div class="plan_header">Original Part Number</div>
+                        <div class="plan_field">{ORIGINAL_PART_NUMBER_1}</div>
+                        <div class="plan_header">Replacement Part Number</div>
+                        <div class="plan_field">{CLAIM_PART_NUMBER_1}</div>
+                        <div class="plan_header">Original Tire Price</div>
+                        <div class="plan_field">{ORIGINAL_TIRE_PRICE_1}</div>
+                        <div class="plan_header">Replacement Tire Price</div>
+                        <div class="plan_field">{CLAIM_TIRE_PRICE_1}</div>
+                        <div class="plan_header">Original Tread Depth</div>
+                        <div class="plan_field">{ORIGINAL_TREAD_DEPTH_1}/32</div>
+                        <div class="plan_header">Remaining Tread Depth</div>
+                        <div class="plan_field">{REMAINING_TREAD_DEPTH_1}/32</div>
+                        <div class="plan_header">Tire Damage Description</div>
+                        <div class="plan_field">{TIRE_DAMAGE_DESC_1}</div>
+                        <div class="plan_header">Coverage</div>
+                        <div class="plan_field">{TIRE_COVERAGE_1}</div>
+                        <div class="plan_header">Coverage Percentage</div>
+                        <div class="plan_field">{TIRE_PERCENTAGE_1}</div>
+                    </div>
+                    <div style="display: {TIRE_2}">
+                        <div class="plan_line"><p><b>Tire 2</b></p></div>
+                        <div class="plan_header">Tire Make</div>
+                        <div class="plan_field">{TIRE_MAKE_2}</div>
+                        <div class="plan_header">Tire Model</div>
+                        <div class="plan_field">{TIRE_MODEL_2}</div>
+                        <div class="plan_header">Tire Size:</div>
+                        <div class="plan_field">{TIRE_SIZE_2}</div>
+                        <div class="plan_header">Tire DOT #</div>
+                        <div class="plan_field">{TIRE_DOT_2}</div>
+                        <div class="plan_header">Original Part Number</div>
+                        <div class="plan_field">{ORIGINAL_PART_NUMBER_2}</div>
+                        <div class="plan_header">Replacement Part Number</div>
+                        <div class="plan_field">{CLAIM_PART_NUMBER_2}</div>
+                        <div class="plan_header">Original Tire Price</div>
+                        <div class="plan_field">{ORIGINAL_TIRE_PRICE_2}</div>
+                        <div class="plan_header">Replacement Tire Price</div>
+                        <div class="plan_field">{CLAIM_TIRE_PRICE_2}</div>
+                        <div class="plan_header">Original Tread Depth</div>
+                        <div class="plan_field">{ORIGINAL_TREAD_DEPTH_2}/32</div>
+                        <div class="plan_header">Remaining Tread Depth</div>
+                        <div class="plan_field">{REMAINING_TREAD_DEPTH_2}/32</div>
+                        <div class="plan_header">Tire Damage Description</div>
+                        <div class="plan_field">{TIRE_DAMAGE_DESC_2}</div>
+                        <div class="plan_header">Coverage</div>
+                        <div class="plan_field">{TIRE_COVERAGE_2}</div>
+                        <div class="plan_header">Coverage Percentage</div>
+                        <div class="plan_field">{TIRE_PERCENTAGE_2}</div>
+                    </div>
+
+
+                </div>
+
+                <div id="edit_claim">
+                    <div class="plan_header">Original Invoice Number:</div>
+                    <div class="plan_field"><input type="text" name="invoice_number" size="30" tabindex="1"
+                                                   value="{INVOICE_NUMBER}"></div>
+                    <div class="plan_header">Original Purchase Date</div>
+                    <div class="plan_field"><input type="text" id="invoice_date" name="invoice_date" size="30"
+                                                   tabindex="2" value="{INVOICE_DATE}"></div>
+                    <div class="plan_header">Original Mileage Reading</div>
+                    <div class="plan_field"><input type="text" id="orig_mileage" name="orig_mileage" size="30"
+                                                   tabindex="3" value="{ORIG_MILEAGE}"></div>
+                    <div class="plan_header">Current Mileage Reading</div>
+                    <div class="plan_field"><input type="text" id="current_mileage" name="current_mileage" size="30"
+                                                   tabindex="4" value="{CURRENT_MILEAGE}"></div>
+                    <div class="plan_header">Person Filing Claim</div>
+                    <div class="plan_field"><input type="text" id="claim_filer" name="claim_filer" size="30"
+                                                   tabindex="5" value="{CLAIM_FILER}"></div>
+                    <div class="plan_submit"><p><b>Vehicle Information</b></p></div>
+                    <div class="plan_header" id="car_year">Vehicle Year:</div>
+                    <div class="plan_field">
+                        <input class="formcheck" type="text" id="vehicle_year" name="vehicle_year" size="4" tabindex="6"
+                               value="{VEHICLE_YEAR}">
+                        <small>Please use 4-digit year</small>
+                    </div>
+                    <div class="plan_header" id="car_make">Vehicle Make:</div>
+                    <div class="plan_field"><select size="1" id="vehicle_make" name="vehicle_make" size="30">{VEHICLE_MAKE_DROPDOWN}</select>
+                    </div>
+                    <div class="clearBoth"></div>
+                    <div class="plan_header" id="car_model">Vehicle Model:</div>
+                    <div class="plan_field">
+                        <input class="formcheck" type="text" id="vehicle_model" name="vehicle_model" size="30"
+                               tabindex="8" value="{VEHICLE_MODEL}">
+                    </div>
+
+
+                    <div class="plan_line"><p><b><br>Tire Information</b></p></div>
+                    <div id="tire_1" style="display: {TIRE_1}">
+                        <div class="plan_line"><p><b>Tire 1</b></p></div>
+                        <div class="plan_header" id="t_make_1">Tire Make</div>
+                        <div class="plan_field">
+                            <input name="tire_make_1" id="tire_make_1" size="30" type="text" tabindex="9"
+                                   value="{TIRE_MAKE_1}">
+                        </div>
+                        <div class="plan_header" id="t_model_1">Tire Model</div>
+                        <div class="plan_field">
+                            <input name="tire_model_1" id="tire_model_1" size="30" type="text" tabindex="10"
+                                   value="{TIRE_MODEL_1}">
+                        </div>
+                        <div class="plan_header" id="t_size_1">Tire Size:</div>
+                        <div class="plan_field">
+                            <input id="tire_size_1" name="tire_size_1" size="30" type="text" tabindex="11"
+                                   value="{TIRE_SIZE_1}">
+                        </div>
+                        <div class="plan_header">Tire <a title="What's this?" target="_new" href="tire_information.pdf">DOT
+                            #</a>:
+                        </div>
+                        <div class="plan_field" id="t_dot_1">
+                            <input name="tire_dot_1" size="30" type="text" tabindex="12" value="{TIRE_DOT_1}">
+                        </div>
+                        <div class="plan_header" id="t_price_1">Original Tire Part Number</div>
+                        <div class="plan_field">
+                            <input id="original_part_number_1" name="original_part_number_1" size="30" type="text"
+                                   tabindex="13" value="{ORIGINAL_PART_NUMBER_1}">
+                        </div>
+                        <div class="plan_header" id="t_price_1">Replacement Tire Part Number</div>
+                        <div class="plan_field">
+                            <input id="claim_part_number_1" name="claim_part_number_1" size="30" type="text"
+                                   tabindex="14" value="{CLAIM_PART_NUMBER_1}">
+                        </div>
+                        <div class="plan_header" id="t_price_1">Original Tire Price</div>
+                        <div class="plan_field">
+                            <input class="formcheck tdepth_1" id="original_tire_price_1" name="original_tire_price_1"
+                                   size="30" type="text"
+                                   tabindex="15" value="{ORIGINAL_TIRE_PRICE_1}">
+                        </div>
+                        <div class="plan_header" id="t_price_1">Replacement Tire Price</div>
+                        <div class="plan_field">
+                            <input id="claim_tire_price_1" name="claim_tire_price_1" size="30" type="text" tabindex="16"
+                                   value="{CLAIM_TIRE_PRICE_1}">
+                        </div>
+                        <div class="plan_header" id="o_t_depth_1">Original Tread Depth</div>
+                        <div class="plan_field">
+                            <input id="original_tread_depth_1" class="formcheck tdepth_1" name="original_tread_depth_1" size="2" MAXLENGTH="2"
+                                   type="text" tabindex="17" value="{ORIGINAL_TREAD_DEPTH_1}">/32
+                        </div>
+                        <div class="plan_header" id="r_t_depth_1">Remaining Tread Depth</div>
+                        <div class="plan_field">
+                            <input id="remaining_tread_depth_1" class="formcheck tdepth_1" name="remaining_tread_depth_1" size="2" MAXLENGTH="2"
+                                   type="text" tabindex="18" value="{REMAINING_TREAD_DEPTH_1}">/32
+                        </div>
+                        <div class="plan_header" id="t_damage_1">Tire Damage Description:</div>
+                        <div class="plan_field">
+                            <textarea id="tire_damage_desc_1" name="tire_damage_desc_1" rows="5" cols="28"
+                                      tabindex="19">{TIRE_DAMAGE_DESC_1}</textarea>
+                        </div>
+
+                        <h4 class="sub-section">Credit Information</h4>
+                        <div class="group">
+                            <div class="plan_header" id="t_percent_1">
+                                Tire 1 Credit Percentage:
+                            </div>
+                            <div class="plan_field">
+                                <div id="percent_1">{TIRE_PERCENTAGE_1}</div>
+                                <input type='hidden' name="percent_1" value="{TIRE_PERCENTAGE_1}">
+                            </div>
+                        </div>
+                        <div class="group">
+                            <div class="plan_header" id="t_coverage_1">
+                                Tire 1 Credit Amount Due:
+                            </div>
+                            <div class="plan_field">
+                                <div id="coverage_1">{TIRE_COVERAGE_1}</div>
+                                <input type="hidden" name="coverage_1" value="{TIRE_COVERAGE_1}">
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="plan_submit">
+                        <input id="add_tire" type="button" value="Add A Second Tire" name="add_tire"><input
+                            id="remove_tire" type="button" value="Remove Second Tire" name="remove_tire">
+                    </div>
+
+                    <div id="tire_2" style="display: {TIRE_2}">
+                        <div class="plan_line"><p><b><br>Tire 2</b></p></div>
+                        <div class="plan_header" id="t_make_2">Tire Make</div>
+                        <div class="plan_field">
+                            <input name="tire_make_2" id="tire_make_2" size="30" type="text" tabindex="20"
+                                   value="{TIRE_MAKE_2}">
+                        </div>
+                        <div class="plan_header" id="t_model_2">Tire Model</div>
+                        <div class="plan_field">
+                            <input name="tire_model_2" id="tire_model_2" size="30" type="text" tabindex="21"
+                                   value="{TIRE_MODEL_2}">
+                        </div>
+                        <div class="plan_header" id="t_size_2">Tire Size:</div>
+                        <div class="plan_field">
+                            <input id="tire_size_2" name="tire_size_2" size="30" type="text" tabindex="22"
+                                   value="{TIRE_SIZE_2}">
+                        </div>
+                        <div class="plan_header">Tire <a title="What's this?" target="_new" href="tire_information.pdf">DOT
+                            #</a>:
+                        </div>
+                        <div class="plan_field" id="t_dot_2">
+                            <input name="tire_dot_2" size="30" type="text" tabindex="23" value="{TIRE_DOT_2}">
+                        </div>
+                        <div class="plan_header">Original Tire Part Number</div>
+                        <div class="plan_field"><input type="text" id="original_part_number_2"
+                                                       name="original_part_number_2" size="30" tabindex="24"
+                                                       value="{ORIGINAL_PART_NUMBER_2}"></div>
+                        <div class="plan_header">Replacement Tire Part Number</div>
+                        <div class="plan_field"><input type="text" id="claim_part_number_2" name="claim_part_number_2"
+                                                       size="30" tabindex="25" value="{CLAIM_PART_NUMBER_2}"></div>
+
+
+                        <div class="plan_header" id="t_price_2">Original Tire Price</div>
+                        <div class="plan_field">
+                            <input class="formcheck tdepth_2" id="original_tire_price_2" name="original_tire_price_2" size="30" type="text"
+                                   tabindex="26" value="{ORIGINAL_TIRE_PRICE_2}">
+                        </div>
+                        <div class="plan_header" id="t_price_2">Replacement Tire Price</div>
+                        <div class="plan_field">
+                            <input id="claim_tire_price_2" name="claim_tire_price_2" size="30" type="text" tabindex="27"
+                                   value="{CLAIM_TIRE_PRICE_2}">
+                        </div>
+
+                        <div class="plan_header" id="o_t_depth_2">Original Tread Depth</div>
+                        <div class="plan_field">
+                            <input id="original_tread_depth_2" class="formcheck tdepth_2" name="original_tread_depth_2" size="2" MAXLENGTH="2"
+                                   type="text" tabindex="28" value="{ORIGINAL_TREAD_DEPTH_2}">/32
+                        </div>
+                        <div class="plan_header" id="r_t_depth_2">Remaining Tread Depth</div>
+                        <div class="plan_field">
+                            <input id="remaining_tread_depth_2" class="formcheck tdepth_2" name="remaining_tread_depth_2" size="2" MAXLENGTH="2"
+                                   type="text" tabindex="29" value="{REMAINING_TREAD_DEPTH_2}">/32
+                        </div>
+                        <div class="plan_header" id="t_damage_2">Tire Damage Description:</div>
+                        <div class="plan_field">
+                            <textarea id="tire_damage_desc_2" name="tire_damage_desc_2" rows="5" cols="28"
+                                      tabindex="30">{TIRE_DAMAGE_DESC_2}</textarea>
+                        </div>
+                        <h4 class="sub-section">Credit Information</h4>
+                        <div class="group">
+                            <div class="plan_header" id="t_percent_2">
+                                Tire 2 Credit Percentage:
+                            </div>
+                            <div class="plan_field">
+                                <div id="percent_2">{TIRE_PERCENTAGE_2}</div>
+                                <input type='hidden' name="percent_2" value="{TIRE_PERCENTAGE_2}">
+                            </div>
+                        </div>
+                        <div class="group">
+                            <div class="plan_header" id="t_coverage_2">
+                                Tire 2 Credit Amount Due:
+                            </div>
+                            <div class="plan_field">
+                                <div id="coverage_2">{TIRE_COVERAGE_2}</div>
+                                <input type='hidden' name="coverage_2" value="{TIRE_COVERAGE_2}">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="plan_submit">
+                    <input id="claim_edit" type="submit" value="Make changes to claim" name="edit_claim"><input
+                        id="claim_complete" type="submit" value="This is correct" name="claim_complete"><input
+                        id="final_check" type="button" value="Review" name="final_check">
+                </div>
+
+            </div>
+            <div id="tire_make_id"></div>
+            <input type="hidden" name="next_page" id="next_page" value="1">
+        </form>
+    </div>
+    <div class="clearBoth"></div>
+</div>

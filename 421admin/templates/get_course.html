@@ -1,0 +1,29 @@
+<div class="page_body">
+    <div class="side_bar">
+        {ADMIN_MENU}
+    </div>
+    <div class="content">
+        <p class="content_header">Edit Course</p>
+        <p class="content_header">Step 1: Select Course</p>
+        <form name="show_courses" action="show_courses" method="post">
+            <div class="plan_wrapper">
+                <div class="plan_header">Search Term:</div>
+                <div class="plan_field"><input type="text" name="term" size="20" size="30"></div>
+                <div class="plan_header">Type of Match:</div>
+                <div class="plan_field"><select size="1" name="operator">
+                    <option value="starts">Begins With</option>
+                    <option value="contains" selected>Contains</option>
+                </select></div>
+                <div class="plan_header">Search By:</div>
+                <div class="plan_field"><select size="1" name="criteria">
+                    <option value="course_title" selected>Course Name</option>
+                    <option value="course_number">Course Number</option>
+
+                </select></div>
+                <div class="plan_submit"><input type="submit" value="Submit" name="display_courses"></div>
+                <div class="clearBoth"></div>
+            </div>
+        </form>
+    </div>
+    <div class="clearBoth"></div>
+</div>

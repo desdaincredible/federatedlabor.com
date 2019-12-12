@@ -1,0 +1,132 @@
+<div class="page_body">
+        <div class="col-sm-4">
+            <p style="text-align: center; padding: 10px;"><img src="images/iStock-490048372-labor-sm.jpg"
+                                                               alt=" auto repair labor"/>
+            <p>
+        </div>
+        <div class="col-sm-8">
+            <div id="claim">
+                <h1 class="content_header">File a New Labor Claim</h1>
+                <form name="new_labor" action="new_labor_save" method="post" enctype="multipart/form-data"
+                      autocomplete="off">
+                    <div class="col-sm-12">
+                        <div class="col-sm-6">Original Repair Invoice/Work Order Number</div>
+                        <div class="col-sm-6"><input required type="text" name="invoice_number" size="30"></div>
+                        <div class="col-sm-6">Original Repair Date</div>
+                        <div class="col-sm-6"><input required type="text" id="original_repair_date"
+                                                       name="original_repair_date"
+                                                       size="30">
+                        </div>
+                        <div class="col-sm-6">Warranty Repair Invoice/Work Order Number</div>
+                        <div class="col-sm-6"><input required type="text" name="sub_invoice_number" size="30"></div>
+                        <div class="col-sm-6">Warranty Repair Date</div>
+                        <div class="col-sm-6"><input required type="text" id="sub_repair_date" name="sub_repair_date"
+                                                       size="30"
+                        ></div>
+                        <div class="col-sm-6">Original Repair Mileage Reading</div>
+                        <div class="col-sm-6"><input required type="text" id="original_repair_mileage"
+                                                       name="original_repair_mileage" size="30"
+                        ></div>
+                        <div class="col-sm-6">Current Mileage Reading</div>
+                        <div class="col-sm-6"><input required type="text" id="current_mileage" name="current_mileage"
+                                                       size="30"
+                        ></div>
+                        <div class="col-sm-6">Customer First Name</div>
+                        <div class="col-sm-6"><input required type="text" id="customer_first_name"
+                                                       name="customer_first_name"
+                                                       size="30"
+                        ></div>
+                        <div class="col-sm-6">Customer Last Name</div>
+                        <div class="col-sm-6"><input required type="text" id="customer_last_name"
+                                                       name="customer_last_name"
+                                                       size="30"
+                        ></div>
+                        <div class="col-sm-6">Customer Phone</div>
+                        <div class="col-sm-6"><input required type="text" id="customer_phone" name="customer_phone"
+                                                       size="30"
+                        ></div>
+                        <div class="col-sm-6">Customer Email</div>
+                        <div class="col-sm-6">
+                            <input required
+                                   type="email" id="customer_email" name="customer_email"
+                                   size="30"
+                            ></div>
+    
+                        <div class="plan_submit"><p><b>Vehicle Information</b></p></div>
+                        <div class="col-sm-6" id="car_year">Vehicle Year</div>
+                        <div class="col-sm-6">
+                                <select required class="formcheck" id="vehicle_year" name="vehicle_year">{VEHICLE_YEARS}</select><small>Please use 4-digit year</small></div>
+                            <input required class="formcheck" type="text" id="vehicle_year" name="vehicle_year" size="4">
+                            <small>Please use 4-digit year</small>
+                        </div>
+                        <div class="col-sm-6" id="car_make">Vehicle Make</div>
+                        <div class="col-sm-6">
+                            <select id="vehicle_make" name="vehicle_make">{VEHICLE_MAKES}</select>
+                        </div>
+                        <div class="clearBoth"></div>
+                        <div class="col-sm-6" id="car_model">Vehicle Model<br/>
+                            <div class="formhelp">Start typing and either choose from list or enter your own.</div>
+                        </div>
+                        <div class="col-sm-6">
+                            <input required class="formcheck" type='text' id="vehicle_model" name='vehicle_model' size='30'>
+                        </div>
+    
+    
+                        <div class="plan_submit"><p><b>Repair Information</b></p></div>
+                        <div class="col-sm-6">Repair Code</div>
+                        <div class="col-sm-6">
+                            <select id="repair_code" name="repair_code">{REPAIR_CODES}</select>
+                        </div>
+    
+                        <div class="col-sm-6">Labor Per Hour</div>
+                        <div class="col-sm-6"><input required type="text" id="labor_price" name="labor_price"
+                                                       size="30"
+                        ></div>
+                        <div class="col-sm-6">Original Repair Labor Hours</div>
+                        <div class="col-sm-6"><input required type="text" id="labor_hour" name="labor_hour"
+                                                       size="30"
+                        ></div>
+    
+                        <div class="col-sm-6">Original Repair Labor Charge</div>
+                        <div class="col-sm-6"><input required type="text" id="original_labor_price"
+                                                       name="original_labor_price"
+                                                       size="30"
+                        ></div>
+    
+    
+                        <div class="col-sm-6">Warranty Repair Labor Charge</div>
+                        <div class="col-sm-6"><input required type="text" id="sub_labor_price" name="sub_labor_price"
+                                                       size="30"
+                        ></div>
+                        <div class="col-sm-6">Repair Description</div>
+                        <div class="col-sm-6">
+                            <textarea type="text" id="repair_description" name="repair_description" cols="29">
+                            </textarea>
+                        </div>
+    
+                        <div class="plan_submit"><p><b>Files</b></p></div>
+                        <div class="col-sm-6">Original Repair Invoice/Work Order</div>
+                        <div class="col-sm-6"><input required type="file" id="orig_inv_filename" name="orig_inv_filename"
+                                                       size="30"
+                        ></div>
+                        <div class="col-sm-6">Original Parts Purchase Receipt</div>
+                        <div class="col-sm-6"><input required type="file" id="orig_parts_filename" name="orig_parts_filename" size="30"></div>
+    
+                        <div class="col-sm-6">Warranty Repair Invoice/Work Order</div>
+                        <div class="col-sm-6"><input required type="file" id="claim_inv_filename"
+                                                       name="claim_inv_filename"
+                                                       size="30"
+                        ></div>
+    
+                        <div class="col-sm-6">Warranty Parts Purchase Receipt:</div>
+                        <div class="col-sm-6"><input required type="file" id="claim_parts_filename" name="claim_parts_filename" size="30"></div>
+    
+                        <div class="plan_submit"><input required class="btn btn-success btn-block" type="submit"
+                                                        value="Submit" name="send_message"></div>
+                        <div class="clearBoth"></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="clearBoth"></div>
+    </div>

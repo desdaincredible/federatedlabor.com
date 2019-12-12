@@ -1,0 +1,22 @@
+<div class="page_body">
+    <div class="side_bar">
+        <p style="text-align: center; padding: 10px;"><img border="0" src="images/tmt_side_image.jpg"
+                                                           alt="Welcome to Treadmaxx"></p></div>
+    <div class="content">
+        <p class="content_header">{SITE_NAME}</p>
+        <p class="content_header">Create Your Plan</p>
+        <form name="abs_contact" action="customer_new_plan" method="post">
+            <div class="plan_wrapper">
+                <div class="plan_header">Your Dealer Name</div>
+                <div class="plan_field"><select size="1" id="dealer_id" name="dealer_id" size="30" tabindex="9">{DEALERS}</select>
+                </div>
+                <div class="plan_header">Your Dealer Phone Number</div>
+                <div class="plan_field"><input type="text" name="dealer_phone" size="30"></div>
+                {PLAN_ID}
+                <div class="plan_submit"><input type="submit" value="Submit" name="send_message"></div>
+                <div class="clearBoth"></div>
+            </div>
+        </form>
+    </div>
+    <div class="clearBoth"></div>
+</div>

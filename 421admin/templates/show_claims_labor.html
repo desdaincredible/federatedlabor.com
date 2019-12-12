@@ -1,0 +1,56 @@
+<div class="page_body">
+    <div class="side_bar">
+        {ADMIN_MENU}
+    </div>
+    <div class="content">
+        <h2 style="margin-bottom: 20px; text-align: center">Labor Claims</h2>
+        <!--<form name="change_date" method="POST" action="show_claims"><p style="text-align: right; padding-right: 10px">-->
+        <!--<select name="month">{CURRENT_MONTH}</select><select name="day">{CURRENT_DAY}</select><select name="year">{CURRENT_YEAR}</select><input-->
+        <!--id="show_claims" type="submit" value="Change Date" name="show_claims"></p></form>-->
+        <!--<div class="plan_wrapper">-->
+        <!--{CLAIM_HEADER}{CLAIM_INFO}-->
+        <!--</div>-->
+        <div class="search">
+            <div>
+                <div class="form-group">
+                    <label>Select Search Type:</label>
+                    <select name="search_type" id="search_type">
+                        <option value="date">Date Of Claim</option>
+                        <option value="dealer_phone">Dealer Phone</option>
+                        <option value="claim_number">Claim Number</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <div class="date">
+
+                    </div>
+                    <div class="dealer_phone" style="display: none;">
+                        <label>Enter Phone Number</label>
+                        <input type="text" name="dealer_phone">
+                    </div>
+                    <div class="claim_number" style="display: none;">
+                        <label>Enter Claim Number</label>
+                        <input type="text" name="claim_number">
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-primary search_btn_labor">Search</button>
+
+            <div style="margin-top: 20px">
+                <table class="table" id="claim_search_result">
+                    <thead>
+                    <th>Claim Id</th>
+                    <th>Claim Date</th>
+                    <th>Dealer Id</th>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td colspan="3">Select Search Value Above</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="clearBoth"></div>
+</div>
